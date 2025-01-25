@@ -828,22 +828,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 321758705353085914, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-      propertyPath: m_Size.x
-      value: 10.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 1766586087873094099, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.22
-      objectReference: {fileID: 0}
     - target: {fileID: 2095129398719667817, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_Name
       value: Boss Section
       objectReference: {fileID: 0}
-    - target: {fileID: 2219800688484734909, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 2095129398719667817, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -882,10 +874,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7317399169233979992, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1037,7 +1025,7 @@ Transform:
   m_GameObject: {fileID: 1841255494}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.08, y: -28.1, z: 9.747202}
+  m_LocalPosition: {x: -0.08, y: -26.1, z: 9.747202}
   m_LocalScale: {x: 1.89, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1154,18 +1142,18 @@ MonoBehaviour:
   platforms:
   - {fileID: 6831568111143933458, guid: 6a7674a1da33a4b04921c4b3a98284dc, type: 3}
   - {fileID: 6831568111143933458, guid: 9674b0abb43144f58a369980696141ec, type: 3}
-  platformsPerSection: 4
-  platformYSpacing: 2
-  platformYRandomOffset: 10
-  platformXMin: -1.3
-  platformXMax: 1.3
+  platformsPerSection: 3
+  platformYSpacing: 2.3
+  platformYRandomOffset: 5
+  platformXMin: -4
+  platformXMax: 4
   lastPlatformTransform: {fileID: 0}
   enemy_start: {fileID: 1756405198}
   enemies:
   - {fileID: 2190703499727997027, guid: 33e169b3e0e8143f69bdee3ed9d61fb5, type: 3}
   enemiesPerSection: 2
-  enemyYSpacing: 8
-  enemyYRandomOffset: 10
+  enemyYSpacing: 3
+  enemyYRandomOffset: 7
   enemyXMin: -1.3
   enemyXMax: 1.3
   spawnCheckRadius: 3

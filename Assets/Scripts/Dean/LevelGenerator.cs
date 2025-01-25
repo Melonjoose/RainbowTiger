@@ -87,8 +87,8 @@ public class LevelGenerator : MonoBehaviour
                 {
                     // Spawn a normal wall section
                     SpawnWallPart();
-                    //SpawnPlatforms();
-                    lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
+                    SpawnPlatforms(); 
+                    //lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
                     lastEnemyTransform = SpawnModules(enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
 
                     print("Normal wall section spawned.");
