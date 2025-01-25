@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-public class EnemyController : MonoBehaviour
+public class EnemyTapewormController : MonoBehaviour
 {
     #region REFERENCES
     [Header("REFERENCES")]
@@ -100,14 +100,6 @@ public class EnemyController : MonoBehaviour
     }
 
     #region ATTACK METHODS
-    private void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Player")
-        {
-            
-        }
-    }
-
     private void WindupAttack()
     {
         LeanTween.moveLocalX(sprite, -3 * isFacingRightScale, windupDuration).setEaseOutBack();
