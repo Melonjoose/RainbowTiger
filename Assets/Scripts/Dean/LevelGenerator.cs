@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    private GameManager gameManager;
+
     [Header("Player Settings")]
     [SerializeField] Transform player; 
 
@@ -11,6 +13,11 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] Transform wallSection_start;
     [SerializeField] Transform[] wallSections;
     [SerializeField] float playerDistSpawnWallPart = 10f;
+
+    [SerializeField] Transform bossSection;
+    [SerializeField] float bossSectionHeightInterval = 100f;
+    private float upcomingBossSectionHeight;
+    private Transform bossSectionTransform;
 
     private Vector3 lastEndPosition;
 
@@ -42,10 +49,14 @@ public class LevelGenerator : MonoBehaviour
 
 
     void Start()
-    { 
+    {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         lastEndPosition = wallSection_start.Find("End Position").position;
         lastPlatformTransform = platform_start;
         lastEnemyTransform = enemy_start;
+
+        upcomingBossSectionHeight = bossSectionHeightInterval;
     }
 
     private void Update()
@@ -55,10 +66,33 @@ public class LevelGenerator : MonoBehaviour
             // Spawn next wall part when player is less than a certain distance away from the last/upcoming end position
             if ((lastEndPosition.y - player.position.y) < playerDistSpawnWallPart)
             {
-                SpawnWallPart();
-                //SpawnPlatforms();
-                lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
-                lastEnemyTransform = SpawnModules(enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
+               
+                // If player height exceeds the height of the upcoming boss section
+                if (gameManager.playerHeight > upcomingBossSectionHeight)
+                {
+                    //Increase the required height for the boss section
+                    upcomingBossSectionHeight += bossSectionHeightInterval;
+
+                    // Spawn the current boss section, communicate it to GameManager
+                    bossSectionTransform = Instantiate(bossSection, lastEndPosition, Quaternion.identity);
+                    gameManager.currentBossSectionTransform = bossSectionTransform;
+
+                    //Set the last end position to that of the spawned boss section
+                    lastEndPosition = bossSectionTransform.Find("End Position").position;
+
+                    print("Boss section spawned.");
+                    print("Upcoming boss section height: " + upcomingBossSectionHeight);
+                }
+                else
+                {
+                    // Spawn a normal wall section
+                    SpawnWallPart();
+                    //SpawnPlatforms();
+                    lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
+                    lastEnemyTransform = SpawnModules(enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
+
+                    print("Normal wall section spawned.");
+                }
 
             }
         }
@@ -78,6 +112,7 @@ public class LevelGenerator : MonoBehaviour
         Transform wallSectionTransform = Instantiate(randomWallSection, spawnPosition, Quaternion.identity);
         return wallSectionTransform;
     }
+
 
     // <------------------------------ GENERIC MODULE SPAWNER ------------------------------> //
     // Note: cannot assign lastPlatformTransform directly through parameters, need to assign it outside this
