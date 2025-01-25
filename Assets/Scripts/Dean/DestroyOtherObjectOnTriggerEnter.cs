@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class DestroyOtherObjectOnTriggerEnter : MonoBehaviour
 {
-
     [SerializeField] Collider2D myCollider; 
-     
 
     private void OnCollisionEnter2D(Collision2D other)
     { 
