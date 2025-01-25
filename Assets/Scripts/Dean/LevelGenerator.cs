@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    [SerializeField] Transform wallSection;
+    [Header("Player Settings")]
+    [SerializeField] GameObject player;
+
+    [Header("Walls")]
     [SerializeField] Transform wallSection_start;
+    [SerializeField] Transform[] wallSections;
+    [SerializeField] float playerDistSpawnWallPart = 10f;
 
     private Vector3 lastEndPosition;
-    [SerializeField] float playerDistSpawnWallPart = 10;
-    [SerializeField] GameObject player;
-     
+
+    [Header("Platforms")]
+    [SerializeField] Transform platform_start;
+    [SerializeField] Transform[] platforms;
+    [SerializeField] [Range(0, 10)] int platformsPerSection = 5;
+    [SerializeField] [Range(0.0f, 10.0f)] float platformYSpacing = 8f;
+    [SerializeField] [Range(0.0f, 10.0f)] float platformYRandomOffset = 10f;
+    [SerializeField] [Range(-5.0f, 5.0f)] float platformXMin = -1.3f;
+    [SerializeField] [Range(-5.0f, 5.0f)] float platformXMax = 1.3f;
+
+    private Transform lastPlatformTransform;
+
+    //Every time i make a new wall section, I want to populate it with 5 platforms, with a minor random vertical offset
+    //I make sure that the platforms do not exceed the endpoint of the walls
 
     void Start()
     { 
         lastEndPosition = wallSection_start.Find("End Position").position;
-       
+        lastPlatformTransform = platform_start;
     }
 
     private void Update()
@@ -24,6 +40,7 @@ public class LevelGenerator : MonoBehaviour
         if ((lastEndPosition.y - player.transform.position.y) < playerDistSpawnWallPart)
         {
             SpawnWallPart();
+            SpawnPlatforms();
         }
     }
 
@@ -35,7 +52,31 @@ public class LevelGenerator : MonoBehaviour
 
     Transform SpawnWallPart(Vector3 spawnPosition)
     {
-        Transform wallSectionTransform = Instantiate(wallSection, spawnPosition, Quaternion.identity);
+        Transform randomWallSection = wallSections[Random.Range(0, wallSections.Length)];
+        Transform wallSectionTransform = Instantiate(randomWallSection, spawnPosition, Quaternion.identity);
         return wallSectionTransform;
+    }
+
+    void SpawnPlatforms()
+    {
+        for(int i=0; i < platformsPerSection; i++)
+        {
+            SpawnPlatform();
+        }
+    }
+
+    void SpawnPlatform()
+    {
+        float newPlatformYPos = lastPlatformTransform.position.y + platformYSpacing + Random.Range(0, platformYRandomOffset);
+        float newPlatformXPos = Random.Range(platformXMin, platformXMax);
+        Vector3 newSpawnPosition = new Vector3(newPlatformXPos, newPlatformYPos, 0);
+        lastPlatformTransform = SpawnPlatform(newSpawnPosition);
+    }
+
+    Transform SpawnPlatform(Vector3 spawnPosition)
+    {
+        Transform randomPlatform = platforms[Random.Range(0, platforms.Length)];
+        Transform platformTransform = Instantiate(randomPlatform, spawnPosition, Quaternion.identity);
+        return platformTransform;
     }
 }
