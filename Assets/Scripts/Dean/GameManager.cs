@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -16,7 +17,12 @@ public class GameManager : MonoBehaviour
     [Header("Boss Fight Settings")]
     public bool isBossFightActive;
     public Transform currentBossSectionTransform;
-     
+
+    private void Start()
+    {
+        playerScore = 0;
+        isBossFightActive = false;
+    }
 
     private void Update()
     {
@@ -38,11 +44,23 @@ public class GameManager : MonoBehaviour
         heightText.text = Mathf.Round(playerScore).ToString();
     }
 
-    void WinBossFight()
+    public void WinBossFight()
     {
         //Open the exit door
         currentBossSectionTransform.Find("Exit Door").gameObject.SetActive(false);
         isBossFightActive = false;
+    }
+
+    public void TriggerPlayerDeath()
+    {
+        //Play sound, animation, etc.
+
+        // Destroy player with 1s delay
+        Destroy(player.gameObject, 1f);
+
+        //Reset game or show game over screen
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 
 }
