@@ -12,12 +12,17 @@ public class CameraFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (target.position.y + offsetY > transform.position.y)
+        if (target != null)
         {
-            Vector3 desiredPosition = new Vector3(0, target.position.y + offsetY, -10);
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothTime);
+            if (target.position.y + offsetY > transform.position.y)
+            {
+                Vector3 desiredPosition = new Vector3(0, target.position.y + offsetY, -10);
+                Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothTime);
 
-            transform.position = smoothedPosition;
+                transform.position = smoothedPosition;
+
+
+            }
         }
     }
 }
