@@ -77,19 +77,51 @@ public class UI_Manager : MonoBehaviour
     public void ShowCredits()
     {
         AudioManager.Instance.PlaySFX("SFX_UIClick");
-        if (menuCredits.activeSelf) // Check if menuCredits is currently active
+        if (menuCredits.activeSelf)
         {
-            menuCredits.SetActive(false); // Deactivate it
+            menuCredits.SetActive(false);
         }
         else
         {
-            menuCredits.SetActive(true); // Activate it
+            menuCredits.SetActive(true);
+        }
+
+    }
+
+        public void ShowInstructions()
+        {
+            AudioManager.Instance.PlaySFX("SFX_UIClick");
+            if (menuInstructions.activeSelf)
+            {
+                menuInstructions.SetActive(false);
+            }
+            else
+            {
+                menuInstructions.SetActive(true);
+            }
+        }
+
+    public void MuteOST()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.MuteOST();
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager instance not found");
         }
     }
 
-    public void ShowInstructions()
+    public void MuteSFX()
     {
-        AudioManager.Instance.PlaySFX("SFX_UIClick");
-        menuInstructions.SetActive(true);
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.MuteSFX();
+        }
+        else
+        {
+            Debug.LogWarning("AudioManager instance not found");
+        }
     }
 }
