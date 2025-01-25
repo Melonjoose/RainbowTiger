@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4992404b52561f24a97017e8eff4fc8f
+guid: e33bc686e129a67408d85dcd97b155f3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Graphic_UI_0
+      name: SpriteSheet_Gum_Shoot_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 1563
-        width: 781
-        height: 409
+        x: 195
+        y: 1511
+        width: 332
+        height: 295
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d42754712f61ab4aa5f1ef749ae830f
-      internalID: 2028686847
+      spriteID: 2cb1eaf8d5e153843ab327d8bf94b21b
+      internalID: -444740509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_1
+      name: SpriteSheet_Gum_Shoot_1
       rect:
         serializedVersion: 2
-        x: 1090
-        y: 1787
-        width: 719
-        height: 226
+        x: 915
+        y: 1511
+        width: 332
+        height: 295
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bec87ad50239fee46ad745b8845c4a8d
-      internalID: 172279849
+      spriteID: 95da8c5878466d6429f02f400caf8501
+      internalID: -1185115736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_2
+      name: SpriteSheet_Gum_Shoot_2
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 1533
-        width: 726
-        height: 229
+        x: 1635
+        y: 1510
+        width: 358
+        height: 327
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc65adeba3a05ce47a3ad34cef6ed83a
-      internalID: -1631680476
+      spriteID: a5a4d14b9a5c9ba4f996df11887ae843
+      internalID: -79045912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_3
+      name: SpriteSheet_Gum_Shoot_3
       rect:
         serializedVersion: 2
-        x: 78
-        y: 1103
-        width: 781
-        height: 409
+        x: 2358
+        y: 1507
+        width: 369
+        height: 330
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e59fb29131d87c44a23076881b4ff7e
-      internalID: 1633205834
+      spriteID: 5094b56e979ed8b4397f88b7da37ef43
+      internalID: 716442722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_4
+      name: SpriteSheet_Gum_Shoot_6
       rect:
         serializedVersion: 2
-        x: 1006
-        y: 1103
-        width: 418
-        height: 409
+        x: 127
+        y: 771
+        width: 397
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa6fc76bd53a61a408a5d59aed4dca4f
-      internalID: 1600661936
+      spriteID: 322386f2000d286418e0c58c7b20a849
+      internalID: -1987486619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_5
+      name: SpriteSheet_Gum_Shoot_7
       rect:
         serializedVersion: 2
-        x: 1480
-        y: 1103
-        width: 418
-        height: 409
+        x: 849
+        y: 774
+        width: 400
+        height: 288
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471957a37d6f26243989b40bdd8afd0b
-      internalID: 1438336361
+      spriteID: 2ce9dfe3d857b234e9033a6d837b1de9
+      internalID: -1612765879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_6
+      name: SpriteSheet_Gum_Shoot_8
       rect:
         serializedVersion: 2
-        x: 78
-        y: 597
-        width: 781
-        height: 409
+        x: 1569
+        y: 774
+        width: 400
+        height: 288
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be9bd12c65ec3f41be99dafe513665d
-      internalID: 924245863
+      spriteID: 3c7cfa5a0468e284087d672337f6e6a9
+      internalID: -1284070836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_7
+      name: SpriteSheet_Gum_Shoot_9
       rect:
         serializedVersion: 2
-        x: 1006
-        y: 597
-        width: 418
-        height: 409
+        x: 2359
+        y: 774
+        width: 423
+        height: 330
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3a15efef6dc3747b6424d894f523cc
-      internalID: -1527555281
+      spriteID: 23f2afd0937b78043940a46ca28b9133
+      internalID: 1928221214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_8
+      name: SpriteSheet_Gum_Shoot_10
       rect:
         serializedVersion: 2
-        x: 1480
-        y: 597
-        width: 418
-        height: 409
+        x: 196
+        y: 40
+        width: 369
+        height: 332
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b30dd678ff2c324e918e8a0af42a975
-      internalID: -1887437425
+      spriteID: b2828fd8d71742b4f8cae08ef64ca8e6
+      internalID: 614679822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Graphic_UI_9
+      name: SpriteSheet_Gum_Shoot_11
       rect:
         serializedVersion: 2
-        x: 78
-        y: 96
-        width: 781
-        height: 409
+        x: 916
+        y: 40
+        width: 331
+        height: 328
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,29 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c61fe5cee504f084eb4fdb18055b2ad4
-      internalID: 712140644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Graphic_UI_10
-      rect:
-        serializedVersion: 2
-        x: 963
-        y: 169
-        width: 970
-        height: 278
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d213ab55f2ba25a4eb6977a68f53fdc8
-      internalID: -1032139224
+      spriteID: 76474912a30312644954004e5ac817a8
+      internalID: 901362656
       vertices: []
       indices: 
       edges: []
@@ -330,7 +309,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: e5b8f682429e5d24a81e7cdee766de9b
     internalID: 0
     vertices: []
     indices: 
@@ -338,17 +317,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Graphic_UI_0: 2028686847
-      Graphic_UI_1: 172279849
-      Graphic_UI_10: -1032139224
-      Graphic_UI_2: -1631680476
-      Graphic_UI_3: 1633205834
-      Graphic_UI_4: 1600661936
-      Graphic_UI_5: 1438336361
-      Graphic_UI_6: 924245863
-      Graphic_UI_7: -1527555281
-      Graphic_UI_8: -1887437425
-      Graphic_UI_9: 712140644
+      SpriteSheet_Gum_Shoot_0: -444740509
+      SpriteSheet_Gum_Shoot_1: -1185115736
+      SpriteSheet_Gum_Shoot_10: 614679822
+      SpriteSheet_Gum_Shoot_11: 901362656
+      SpriteSheet_Gum_Shoot_2: -79045912
+      SpriteSheet_Gum_Shoot_3: 716442722
+      SpriteSheet_Gum_Shoot_4: -1401793742
+      SpriteSheet_Gum_Shoot_5: 1866038966
+      SpriteSheet_Gum_Shoot_6: -1987486619
+      SpriteSheet_Gum_Shoot_7: -1612765879
+      SpriteSheet_Gum_Shoot_8: -1284070836
+      SpriteSheet_Gum_Shoot_9: 1928221214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

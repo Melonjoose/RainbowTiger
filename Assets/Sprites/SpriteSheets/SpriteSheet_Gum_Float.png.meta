@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bd8777e180e62746a4407e65c9fc023
+guid: 1ccf5b650360e87429d657689971deb3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,564 +93,551 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_sheet_0
+      name: SpriteSheet_Gum_Float_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 2976
-        width: 368
-        height: 278
+        x: 3695
+        y: 3026
+        width: 510
+        height: 609
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43f6e9231ae5bd94d9891e06be84dd51
-      internalID: 124943943
+      spriteID: b4f03175dd02b6f4b89b9c0fd9e34ea7
+      internalID: -1887584656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_1
+      name: SpriteSheet_Gum_Float_2
       rect:
         serializedVersion: 2
-        x: 898
-        y: 2976
-        width: 368
-        height: 278
+        x: 100
+        y: 3012
+        width: 512
+        height: 559
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6e145578c77f994091e041000836ab0
-      internalID: 624940638
+      spriteID: 701efb279ae73b54785200d533fff783
+      internalID: 1385334874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_3
+      name: SpriteSheet_Gum_Float_3
       rect:
         serializedVersion: 2
-        x: 1617
-        y: 2976
-        width: 368
-        height: 278
+        x: 820
+        y: 3012
+        width: 512
+        height: 559
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68d47e56c540604f8fb1a57da2ed7b4
-      internalID: -1592869582
+      spriteID: f54f127308d8e09489ccaaa0fd922812
+      internalID: 322759100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_5
+      name: SpriteSheet_Gum_Float_4
       rect:
         serializedVersion: 2
-        x: 2338
-        y: 2977
-        width: 348
-        height: 317
+        x: 1533
+        y: 3024
+        width: 510
+        height: 547
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1977c82f9e61ca34ab01b00e214a97d4
-      internalID: -1095944300
+      spriteID: 6c1649217ed139d4f896c175a9fafb74
+      internalID: 686321288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_6
+      name: SpriteSheet_Gum_Float_5
       rect:
         serializedVersion: 2
-        x: 3058
-        y: 2976
-        width: 348
-        height: 318
+        x: 2252
+        y: 3024
+        width: 512
+        height: 547
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4671f10f4d810b4591c1c21920256da
-      internalID: -1734615085
+      spriteID: f89628d7570a7554d872e8c2e8c9f989
+      internalID: 1131135001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_7
+      name: SpriteSheet_Gum_Float_6
       rect:
         serializedVersion: 2
-        x: 3777
-        y: 2976
-        width: 350
-        height: 318
+        x: 2975
+        y: 3026
+        width: 511
+        height: 545
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b314fc63d035eb24da76d7d1daaa9715
-      internalID: 571780374
+      spriteID: 9d6d1fcdd2816fd4cbb2cd7741c51de2
+      internalID: 1155856816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_8
+      name: SpriteSheet_Gum_Float_9
       rect:
         serializedVersion: 2
-        x: 166
-        y: 2239
-        width: 358
-        height: 335
+        x: 96
+        y: 2282
+        width: 512
+        height: 554
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aa938faba52dc847aaf9bba863b3687
-      internalID: -2108762872
+      spriteID: 3b4e07105f20db644bb3b8b254227fec
+      internalID: -231410765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_9
+      name: SpriteSheet_Gum_Float_10
       rect:
         serializedVersion: 2
-        x: 885
-        y: 2239
-        width: 358
-        height: 335
+        x: 817
+        y: 2282
+        width: 511
+        height: 554
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 406180565ab68c349b075a255e2d1fbf
-      internalID: -130039567
+      spriteID: bc3b2d44f5b49bd479e0bc513f9b0e33
+      internalID: 228384360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_10
+      name: SpriteSheet_Gum_Float_11
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 2239
-        width: 359
-        height: 335
+        x: 1541
+        y: 2286
+        width: 510
+        height: 550
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21225de7091f4b9429605e4442db8a6f
-      internalID: -2100060668
+      spriteID: 4dabd3c8cc334f049993ea27103abad1
+      internalID: -2087096644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_11
+      name: SpriteSheet_Gum_Float_12
       rect:
         serializedVersion: 2
-        x: 2326
-        y: 2239
-        width: 358
-        height: 335
+        x: 2260
+        y: 2286
+        width: 512
+        height: 550
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fff3992485abe4847b9541dc6ffb1044
-      internalID: 144979918
+      spriteID: 6a1c166dda78a1843b191ea923074d6d
+      internalID: 1284268790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_12
+      name: SpriteSheet_Gum_Float_13
       rect:
         serializedVersion: 2
-        x: 3058
-        y: 2242
-        width: 348
-        height: 317
+        x: 2986
+        y: 2280
+        width: 512
+        height: 556
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fae7211c206f9b4f9a14ff3732ef63d
-      internalID: 325234144
+      spriteID: cc3b77591d433d24d945df5169282613
+      internalID: -828137678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_13
+      name: SpriteSheet_Gum_Float_14
       rect:
         serializedVersion: 2
-        x: 3777
-        y: 2242
-        width: 350
-        height: 317
+        x: 3707
+        y: 2280
+        width: 511
+        height: 556
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5f21fc2a91161b45aae4f35242f74e8
-      internalID: 273038507
+      spriteID: f74e1b8f75679e340a7ffd1c614c35af
+      internalID: -254769806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_14
+      name: SpriteSheet_Gum_Float_15
       rect:
         serializedVersion: 2
-        x: 178
-        y: 1507
-        width: 348
-        height: 317
+        x: 107
+        y: 1539
+        width: 510
+        height: 563
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 799e2f772b3dddd4db1cd29c6c088922
-      internalID: 1129121886
+      spriteID: 11492a40bf1c4524494b29ff5abc7abe
+      internalID: 373172247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_15
+      name: SpriteSheet_Gum_Float_16
       rect:
         serializedVersion: 2
-        x: 898
-        y: 1507
-        width: 367
-        height: 277
+        x: 826
+        y: 1539
+        width: 512
+        height: 563
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a44e1536c91924d4bbb99c9283aae706
-      internalID: 335648481
+      spriteID: b114ba42708171d408a0dceb4a18addb
+      internalID: 817942972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_16
+      name: SpriteSheet_Gum_Float_17
       rect:
         serializedVersion: 2
-        x: 1617
-        y: 1507
-        width: 363
-        height: 277
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a480dc397d967f444bf83dc4b5ae08dc
-      internalID: -761005254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_sheet_18
-      rect:
-        serializedVersion: 2
-        x: 2336
-        y: 1507
-        width: 368
-        height: 277
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46b6be10fc4f17f49bce7497466048aa
-      internalID: -2104291958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_sheet_19
-      rect:
-        serializedVersion: 2
-        x: 3074
-        y: 1509
-        width: 344
+        x: 1636
+        y: 1693
+        width: 322
         height: 325
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e3a3ef827e53914b98b1aa4c9052396
-      internalID: 799847550
+      spriteID: 7613f6ada4be49e419df1dac80844ed4
+      internalID: 2138363188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_20
+      name: SpriteSheet_Gum_Float_18
       rect:
         serializedVersion: 2
-        x: 3794
-        y: 1509
-        width: 344
-        height: 325
+        x: 2391
+        y: 1695
+        width: 268
+        height: 373
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08b93708cb8119546a2d3d935eac0b9d
-      internalID: 202903879
+      spriteID: b6680d0401a198f468e6aa30ba4170c1
+      internalID: -1832311462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_21
+      name: SpriteSheet_Gum_Float_19
       rect:
         serializedVersion: 2
-        x: 195
-        y: 775
-        width: 344
-        height: 325
+        x: 3121
+        y: 1678
+        width: 247
+        height: 407
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2416f13d93a77cd438a2f6a5a782ee1e
-      internalID: 1162711630
+      spriteID: b4a8158adb6a4264ba1be060fe680345
+      internalID: -25682942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_22
+      name: SpriteSheet_Gum_Float_20
       rect:
         serializedVersion: 2
-        x: 910
-        y: 775
-        width: 359
-        height: 342
+        x: 3840
+        y: 1678
+        width: 249
+        height: 407
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3e0dc001473d946a2a5161a683225d
-      internalID: -524205273
+      spriteID: e68eb2838346dd248b22fc562f8c56d2
+      internalID: -187345052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_23
+      name: SpriteSheet_Gum_Float_21
       rect:
         serializedVersion: 2
-        x: 1632
-        y: 776
-        width: 356
+        x: 212
+        y: 972
+        width: 310
         height: 341
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46d9d61cfebd2f94a8f350157dc44d78
-      internalID: -1639403674
+      spriteID: d97fba383e8ed884999ab4195a9fe90e
+      internalID: 380873962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_24
+      name: SpriteSheet_Gum_Float_22
       rect:
         serializedVersion: 2
-        x: 2351
-        y: 775
-        width: 356
-        height: 342
+        x: 929
+        y: 974
+        width: 317
+        height: 332
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 641db2fba3dcc2a4ab5b2630193feaf8
-      internalID: -1155864425
+      spriteID: 4097c57e2b1d7fb48a6fa69d70f29c7f
+      internalID: -1218804183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_25
+      name: SpriteSheet_Gum_Float_23
       rect:
         serializedVersion: 2
-        x: 3074
-        y: 775
-        width: 344
-        height: 325
+        x: 1649
+        y: 974
+        width: 316
+        height: 332
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c11488cafc25ddb4f9780f785a34e964
-      internalID: 203820765
+      spriteID: d9094ff7890478441941fadfd10f6144
+      internalID: 837327697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_26
+      name: SpriteSheet_Gum_Float_24
       rect:
         serializedVersion: 2
-        x: 3794
-        y: 775
-        width: 344
-        height: 325
+        x: 2329
+        y: 923
+        width: 397
+        height: 426
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba6359a0bfde1ff4591aaf74b10115c5
-      internalID: -1105830778
+      spriteID: 4248375b1c273c743ad36c4bdde7d381
+      internalID: -1691698345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_27
+      name: SpriteSheet_Gum_Float_25
       rect:
         serializedVersion: 2
-        x: 195
-        y: 39
-        width: 344
-        height: 327
+        x: 3049
+        y: 923
+        width: 398
+        height: 426
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d2c5557fa10ffc4daa6a937de0c4818
-      internalID: 392311970
+      spriteID: f2640a0a8e1785b48b07c6247560d134
+      internalID: 552427932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_sheet_28
+      name: SpriteSheet_Gum_Float_26
       rect:
         serializedVersion: 2
-        x: 914
-        y: 39
-        width: 344
-        height: 327
+        x: 3722
+        y: 828
+        width: 484
+        height: 532
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2ed1b5e9fd4fe47984c55b262484ff
-      internalID: -760269449
+      spriteID: 1635cac41d1910a41a1207f36586bec2
+      internalID: -125848673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Float_27
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 92
+        width: 483
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b04840561181449bd0605792043629
+      internalID: -1282301014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Float_28
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 72
+        width: 512
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d99d647c91ac2449332dbc05e56291
+      internalID: 758281442
       vertices: []
       indices: 
       edges: []
@@ -658,7 +645,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 78448a415f3896e4c8f59e7ab38a4474
+    spriteID: a9c95fa57753ab242b6684cfe439a059
     internalID: 0
     vertices: []
     indices: 
@@ -666,35 +653,35 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      sprite_sheet_0: 124943943
-      sprite_sheet_1: 624940638
-      sprite_sheet_10: -2100060668
-      sprite_sheet_11: 144979918
-      sprite_sheet_12: 325234144
-      sprite_sheet_13: 273038507
-      sprite_sheet_14: 1129121886
-      sprite_sheet_15: 335648481
-      sprite_sheet_16: -761005254
-      sprite_sheet_17: 1768594738
-      sprite_sheet_18: -2104291958
-      sprite_sheet_19: 799847550
-      sprite_sheet_2: 2088507460
-      sprite_sheet_20: 202903879
-      sprite_sheet_21: 1162711630
-      sprite_sheet_22: -524205273
-      sprite_sheet_23: -1639403674
-      sprite_sheet_24: -1155864425
-      sprite_sheet_25: 203820765
-      sprite_sheet_26: -1105830778
-      sprite_sheet_27: 392311970
-      sprite_sheet_28: -760269449
-      sprite_sheet_3: -1592869582
-      sprite_sheet_4: -2002601707
-      sprite_sheet_5: -1095944300
-      sprite_sheet_6: -1734615085
-      sprite_sheet_7: 571780374
-      sprite_sheet_8: -2108762872
-      sprite_sheet_9: -130039567
+      SpriteSheet_Gum_Float_0: -520771649
+      SpriteSheet_Gum_Float_1: -1887584656
+      SpriteSheet_Gum_Float_10: 228384360
+      SpriteSheet_Gum_Float_11: -2087096644
+      SpriteSheet_Gum_Float_12: 1284268790
+      SpriteSheet_Gum_Float_13: -828137678
+      SpriteSheet_Gum_Float_14: -254769806
+      SpriteSheet_Gum_Float_15: 373172247
+      SpriteSheet_Gum_Float_16: 817942972
+      SpriteSheet_Gum_Float_17: 2138363188
+      SpriteSheet_Gum_Float_18: -1832311462
+      SpriteSheet_Gum_Float_19: -25682942
+      SpriteSheet_Gum_Float_2: 1385334874
+      SpriteSheet_Gum_Float_20: -187345052
+      SpriteSheet_Gum_Float_21: 380873962
+      SpriteSheet_Gum_Float_22: -1218804183
+      SpriteSheet_Gum_Float_23: 837327697
+      SpriteSheet_Gum_Float_24: -1691698345
+      SpriteSheet_Gum_Float_25: 552427932
+      SpriteSheet_Gum_Float_26: -125848673
+      SpriteSheet_Gum_Float_27: -1282301014
+      SpriteSheet_Gum_Float_28: 758281442
+      SpriteSheet_Gum_Float_3: 322759100
+      SpriteSheet_Gum_Float_4: 686321288
+      SpriteSheet_Gum_Float_5: 1131135001
+      SpriteSheet_Gum_Float_6: 1155856816
+      SpriteSheet_Gum_Float_7: 1128393708
+      SpriteSheet_Gum_Float_8: -1511791412
+      SpriteSheet_Gum_Float_9: -231410765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

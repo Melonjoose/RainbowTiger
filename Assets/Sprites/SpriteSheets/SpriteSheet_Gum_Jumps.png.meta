@@ -1,0 +1,847 @@
+fileFormatVersion: 2
+guid: 03449c643610f7947b4461f80ae159b6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_0
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 3834
+        width: 293
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f04806621658394e814f044240951d0
+      internalID: 163093086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_1
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 3834
+        width: 295
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9c05137800bad449d327d2ac6babc2
+      internalID: 794823419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_2
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 3834
+        width: 263
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74befb7d0495c414a8de5875196d9eaf
+      internalID: -974031488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_3
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 3834
+        width: 262
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046f5e11e4e01fd45b6706c5a4638b5a
+      internalID: 730352877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_4
+      rect:
+        serializedVersion: 2
+        x: 3333
+        y: 3834
+        width: 238
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185a204d9145f4e4aa6bc097c4fd2ae4
+      internalID: -374121318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_5
+      rect:
+        serializedVersion: 2
+        x: 4052
+        y: 3834
+        width: 239
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3c562b9943aac459fe91f9c698c0c4
+      internalID: -1594205884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_6
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 3160
+        width: 340
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e133ff1cdd80f34b8353a37680508fd
+      internalID: -470732889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_7
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 3160
+        width: 338
+        height: 474
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329655422a2c1e847aeedba013025533
+      internalID: -1176736257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_8
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 3296
+        width: 325
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8982eb19c16d3d9459c05a1caa369929
+      internalID: -2101837337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_9
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3296
+        width: 324
+        height: 336
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063029ede8ec48b4a95d6974e8225304
+      internalID: 426191378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_10
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 3309
+        width: 324
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3f935a73171af4b85fef8675953bb1
+      internalID: -516678302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_11
+      rect:
+        serializedVersion: 2
+        x: 3796
+        y: 3309
+        width: 323
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31967a49fc73274e932d649243a6709
+      internalID: 2002432927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2245
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e59fa9479d09e740a1fb43b53ff6b6a
+      internalID: 762557447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_13
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2245
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffbaaece21f0824d85e4a9c668f4d52
+      internalID: -2041037152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_14
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2243
+        width: 422
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdb3a46759a34a41b85b3ab70ac221a
+      internalID: -277638150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_15
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 2243
+        width: 422
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed19f65706e90f4e895f628aab1a2cb
+      internalID: -410286091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_16
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 2243
+        width: 476
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687aa1e3cc5cd9c4282222751d20ddf5
+      internalID: 1883897193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_17
+      rect:
+        serializedVersion: 2
+        x: 3722
+        y: 2243
+        width: 476
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d308b9de36ed5cf4f8e38e9989f23e1f
+      internalID: -1753655295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1509
+        width: 334
+        height: 507
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc632a4e50a33d942b6aa1a362144d49
+      internalID: 180377325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_21
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1509
+        width: 334
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24301cbce985934db96fbbbcbba9b33
+      internalID: -7866251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_22
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1689
+        width: 323
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93009edc6c875b40a3d81bcd95730da
+      internalID: -1062186425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_23
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 1689
+        width: 323
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2816ea8be2fe59469492534e180c674
+      internalID: -427476153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_24
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 1739
+        width: 426
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8c04d2af25944cabf48f4edc17e5d
+      internalID: -1628888768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_25
+      rect:
+        serializedVersion: 2
+        x: 3744
+        y: 1739
+        width: 424
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407648a48fab5aa4ab3818798ced466b
+      internalID: -635198874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_28
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 931
+        width: 364
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab1aa97cb830fb4e963b7bdbf1d8ed0
+      internalID: 2122170091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_29
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 931
+        width: 366
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664fa02cb79b37541913ca51fa48bf2a
+      internalID: -293437713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_30
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 768
+        width: 295
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238f40885ca906c4b807d2a6be0950c0
+      internalID: 1015321987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_31
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 768
+        width: 297
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4243bb2b4a6a3cd42aa4973b1467ab09
+      internalID: 1703739819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_32
+      rect:
+        serializedVersion: 2
+        x: 3038
+        y: 772
+        width: 407
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa2a6b24d1e4a34990fb2beb8b06b0b
+      internalID: -1855923014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_33
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 772
+        width: 407
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4139c1fcfce4eb64fa5aa7f08f267201
+      internalID: -2006819560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_34
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 40
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013b99fcc21f20b479691fb7880f563f
+      internalID: -161386601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_35
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 40
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6506e4ec9a7e1b746bf74bdd2d356851
+      internalID: -737017653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Jumps_36
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 40
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e310155ed0ee646aa419a83a4a62dd
+      internalID: 1810674358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5a7eadb5b1a8eaf48839d3fdc41554c6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet_Gum_Jumps_0: 163093086
+      SpriteSheet_Gum_Jumps_1: 794823419
+      SpriteSheet_Gum_Jumps_10: -516678302
+      SpriteSheet_Gum_Jumps_11: 2002432927
+      SpriteSheet_Gum_Jumps_12: 762557447
+      SpriteSheet_Gum_Jumps_13: -2041037152
+      SpriteSheet_Gum_Jumps_14: -277638150
+      SpriteSheet_Gum_Jumps_15: -410286091
+      SpriteSheet_Gum_Jumps_16: 1883897193
+      SpriteSheet_Gum_Jumps_17: -1753655295
+      SpriteSheet_Gum_Jumps_18: 224630002
+      SpriteSheet_Gum_Jumps_19: -790850365
+      SpriteSheet_Gum_Jumps_2: -974031488
+      SpriteSheet_Gum_Jumps_20: 180377325
+      SpriteSheet_Gum_Jumps_21: -7866251
+      SpriteSheet_Gum_Jumps_22: -1062186425
+      SpriteSheet_Gum_Jumps_23: -427476153
+      SpriteSheet_Gum_Jumps_24: -1628888768
+      SpriteSheet_Gum_Jumps_25: -635198874
+      SpriteSheet_Gum_Jumps_26: 1961973276
+      SpriteSheet_Gum_Jumps_27: -569845951
+      SpriteSheet_Gum_Jumps_28: 2122170091
+      SpriteSheet_Gum_Jumps_29: -293437713
+      SpriteSheet_Gum_Jumps_3: 730352877
+      SpriteSheet_Gum_Jumps_30: 1015321987
+      SpriteSheet_Gum_Jumps_31: 1703739819
+      SpriteSheet_Gum_Jumps_32: -1855923014
+      SpriteSheet_Gum_Jumps_33: -2006819560
+      SpriteSheet_Gum_Jumps_34: -161386601
+      SpriteSheet_Gum_Jumps_35: -737017653
+      SpriteSheet_Gum_Jumps_36: 1810674358
+      SpriteSheet_Gum_Jumps_37: -741654196
+      SpriteSheet_Gum_Jumps_38: 1071162003
+      SpriteSheet_Gum_Jumps_39: -906863064
+      SpriteSheet_Gum_Jumps_4: -374121318
+      SpriteSheet_Gum_Jumps_5: -1594205884
+      SpriteSheet_Gum_Jumps_6: -470732889
+      SpriteSheet_Gum_Jumps_7: -1176736257
+      SpriteSheet_Gum_Jumps_8: -2101837337
+      SpriteSheet_Gum_Jumps_9: 426191378
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

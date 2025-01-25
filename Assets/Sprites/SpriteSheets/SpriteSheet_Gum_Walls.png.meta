@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 3b61c1e180271564882f6c9c6d58b572
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_0
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 2364
+        width: 293
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955ae1a1f1519e44cb3c8382c4ef428f
+      internalID: -509991846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_1
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 2364
+        width: 294
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c27de35b9f0ae943aab1353f85efe28
+      internalID: -2021854449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_2
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 2364
+        width: 293
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd616f16ea52244cba67991bcd26a8b
+      internalID: 1705133088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_3
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 2364
+        width: 295
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e879d2f8cdaebe44fba8a38097e10be5
+      internalID: 760294208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_4
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 2364
+        width: 295
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a99ad61a6f920d4ea6319d9e4eaae64
+      internalID: 1245144552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1628
+        width: 296
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefe24228c7cda0419ad45f52a88bc28
+      internalID: -454599484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_6
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1628
+        width: 303
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460205ebcc0ffe44c8084fc7ff0b176d
+      internalID: 490773531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_7
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1628
+        width: 304
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471464d5942fca447abc35ab510a1ca5
+      internalID: 1557711363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_8
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1628
+        width: 302
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82719d9c68b95944595d08f4c8877569
+      internalID: 1453468491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_9
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 1628
+        width: 302
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9493e67305ee474fb261b02c3fff35e
+      internalID: 2015999056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 894
+        width: 293
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d27976e4a121c4aa04bbf2de6b361c
+      internalID: 380543532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_11
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 894
+        width: 294
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4ac154e9d9df440b10302ebe369a7e
+      internalID: -338791519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_12
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 894
+        width: 233
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125d8692c77d63544ae52a58a7405eef
+      internalID: -590692833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_13
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 894
+        width: 233
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ab7fb2d99d1ba4bb752d31f3c0b1bb
+      internalID: -1722258705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_14
+      rect:
+        serializedVersion: 2
+        x: 3231
+        y: 892
+        width: 341
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0230fd73d557845b163d7ffd575d90
+      internalID: -1069628532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 157
+        width: 341
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec41035578b3347b205e11adfd944b
+      internalID: -131478102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_16
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 82
+        width: 278
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a70c22523c1764480b20d13f996ffa
+      internalID: 1557721979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_17
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 82
+        width: 276
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872cca9290ea74f47aee38748dd59214
+      internalID: -706764694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_18
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 159
+        width: 291
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfe76fce1a61a343a3039bc3ed16e4a
+      internalID: 2078890287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Walls_19
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 159
+        width: 294
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a261a5be76ac04ebf61fdc197a53a9
+      internalID: -372470724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7eb91bdd2523b8745b02c2e38d2e9f66
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet_Gum_Walls_0: -509991846
+      SpriteSheet_Gum_Walls_1: -2021854449
+      SpriteSheet_Gum_Walls_10: 380543532
+      SpriteSheet_Gum_Walls_11: -338791519
+      SpriteSheet_Gum_Walls_12: -590692833
+      SpriteSheet_Gum_Walls_13: -1722258705
+      SpriteSheet_Gum_Walls_14: -1069628532
+      SpriteSheet_Gum_Walls_15: -131478102
+      SpriteSheet_Gum_Walls_16: 1557721979
+      SpriteSheet_Gum_Walls_17: -706764694
+      SpriteSheet_Gum_Walls_18: 2078890287
+      SpriteSheet_Gum_Walls_19: -372470724
+      SpriteSheet_Gum_Walls_2: 1705133088
+      SpriteSheet_Gum_Walls_3: 760294208
+      SpriteSheet_Gum_Walls_4: 1245144552
+      SpriteSheet_Gum_Walls_5: -454599484
+      SpriteSheet_Gum_Walls_6: 490773531
+      SpriteSheet_Gum_Walls_7: 1557711363
+      SpriteSheet_Gum_Walls_8: 1453468491
+      SpriteSheet_Gum_Walls_9: 2015999056
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

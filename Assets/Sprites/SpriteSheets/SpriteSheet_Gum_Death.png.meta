@@ -1,0 +1,578 @@
+fileFormatVersion: 2
+guid: 21d5c43f83d5f7a48b152f77e46a6494
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_0
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2980
+        width: 334
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e122fcada24c1db4f9becd7904f88431
+      internalID: 1269297159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_1
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 2980
+        width: 332
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d77c54db00b9f409ff13008bc84ae3
+      internalID: -1663719903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_2
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 2980
+        width: 344
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b031f3f0342bddf498996e250a9b5bff
+      internalID: 1151258737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_3
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 2980
+        width: 345
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec5b34d64deb02459d9d914ddf09ced
+      internalID: 1400579302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_4
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 2980
+        width: 320
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510777afc194fde49955724c53a251e4
+      internalID: -63166907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_7
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2244
+        width: 320
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fbe0fef64553a4588ece1dae2da87f
+      internalID: 1123694865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_8
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 2244
+        width: 391
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68be4c4a2514ac45a670124f25d1310
+      internalID: 1414282559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_9
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 2244
+        width: 391
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d96b6789056a2468dd501fb39237fc
+      internalID: 857802691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_10
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 2242
+        width: 520
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cd8c94cf4a7d94b973c7c538044242
+      internalID: 1703042833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_11
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 2242
+        width: 513
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5d8086c350a77478a3db289be63c71
+      internalID: -1290852766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1506
+        width: 520
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73abcc99446472499c2a46f08e55d89
+      internalID: 619489979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_13
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1506
+        width: 513
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca73ea288a3aa844a80debaad1ef06f
+      internalID: 1102845824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_14
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1506
+        width: 521
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6d7f421c4afd84787fc21ee29889a2
+      internalID: 1776114869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_15
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1506
+        width: 520
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7786dcd2d90eed64d859f39db06477a2
+      internalID: -2031302404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_16
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 1501
+        width: 678
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56329dca052372d4f93e75044f06670d
+      internalID: -827649714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_17
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 771
+        width: 488
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826f44e0698add847b793fb5e3a77a8e
+      internalID: -1735077309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_18
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 751
+        width: 456
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a9bbf85fd39a946996a4c895e4423d
+      internalID: -170653136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_19
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 751
+        width: 454
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffe5c7b6dedafe439ed51bf2c0fd39e
+      internalID: 868624964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_20
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 751
+        width: 454
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4264270d03c1656469a8bc0a142b3de1
+      internalID: -1081422501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_21
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 751
+        width: 455
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e2d32044e44041aba4cf926a47838
+      internalID: -344021052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Gum_Death_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 15
+        width: 455
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0332d84bf10b6b4db3aa939a0a197f8
+      internalID: 997201551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 24280db215b958b42a3129b7c6ed0238
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SpriteSheet_Gum_Death_0: 1269297159
+      SpriteSheet_Gum_Death_1: -1663719903
+      SpriteSheet_Gum_Death_10: 1703042833
+      SpriteSheet_Gum_Death_11: -1290852766
+      SpriteSheet_Gum_Death_12: 619489979
+      SpriteSheet_Gum_Death_13: 1102845824
+      SpriteSheet_Gum_Death_14: 1776114869
+      SpriteSheet_Gum_Death_15: -2031302404
+      SpriteSheet_Gum_Death_16: -827649714
+      SpriteSheet_Gum_Death_17: -1735077309
+      SpriteSheet_Gum_Death_18: -170653136
+      SpriteSheet_Gum_Death_19: 868624964
+      SpriteSheet_Gum_Death_2: 1151258737
+      SpriteSheet_Gum_Death_20: -1081422501
+      SpriteSheet_Gum_Death_21: -344021052
+      SpriteSheet_Gum_Death_22: 997201551
+      SpriteSheet_Gum_Death_3: 1400579302
+      SpriteSheet_Gum_Death_4: -63166907
+      SpriteSheet_Gum_Death_5: -144552655
+      SpriteSheet_Gum_Death_6: -1772006661
+      SpriteSheet_Gum_Death_7: 1123694865
+      SpriteSheet_Gum_Death_8: 1414282559
+      SpriteSheet_Gum_Death_9: 857802691
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
