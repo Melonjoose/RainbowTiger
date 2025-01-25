@@ -85,7 +85,7 @@ public class LevelGenerator : MonoBehaviour
                 }
                 else
                 {
-                    // Spawn a normal wall section
+                    // Spawn a normal wall section, must spawn platforms before walls so that I can constrain the platforms
                     SpawnWallPart();
                     SpawnPlatforms(); 
                     //lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
@@ -138,9 +138,11 @@ public class LevelGenerator : MonoBehaviour
             //Chooses a random module from the desired module array to spawn
             Transform randomModule = moduleArray[Random.Range(0, moduleArray.Length)];
 
-
+            if (newSpawnPosition.y < lastEndPosition.y)
+            {
             Transform newModuleTransform = Instantiate(randomModule, newSpawnPosition, Quaternion.identity);
             lastModuleTransform = newModuleTransform;
+            }
         }
         return lastModuleTransform;
     }
