@@ -119,11 +119,12 @@ public class LevelGenerator : MonoBehaviour
             Vector3 centrepoint = overlapColliders[i].bounds.center;
             float xExtent = overlapColliders[i].bounds.extents.x;
             float yExtent = overlapColliders[i].bounds.extents.y;
+            float buffer = 0.5f;
 
-            float leftExtent = centrepoint.x - xExtent;
-            float rightExtent = centrepoint.x + xExtent;
-            float topExtent = centrepoint.y + yExtent;
-            float bottomExtent = centrepoint.y - yExtent;
+            float leftExtent = centrepoint.x - (xExtent + buffer);
+            float rightExtent = centrepoint.x + (xExtent + buffer);
+            float topExtent = centrepoint.y + (yExtent + buffer);
+            float bottomExtent = centrepoint.y - (yExtent + buffer);
 
             if (spawnPosition.y >= bottomExtent && spawnPosition.y <= topExtent)
             {
