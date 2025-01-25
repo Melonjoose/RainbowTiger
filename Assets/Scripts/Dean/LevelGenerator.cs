@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     [Header("Player Settings")]
-    [SerializeField] GameObject player;
+    [SerializeField] Transform player; 
 
     [Header("Walls")]
     [SerializeField] Transform wallSection_start;
@@ -13,6 +13,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] float playerDistSpawnWallPart = 10f;
 
     private Vector3 lastEndPosition;
+
 
     [Header("Platforms")]
     [SerializeField] Transform platform_start;
@@ -25,8 +26,17 @@ public class LevelGenerator : MonoBehaviour
 
     private Transform lastPlatformTransform;
 
-    //Every time i make a new wall section, I want to populate it with 5 platforms, with a minor random vertical offset
-    //I make sure that the platforms do not exceed the endpoint of the walls
+
+    [Header("Enemies")] 
+    [SerializeField] Transform[] enemies;
+    [SerializeField] [Range(0, 10)] int enemiesPerSection = 3;
+    [SerializeField] [Range(0.0f, 10.0f)] float enemyYSpacing = 10f;
+    [SerializeField] [Range(0.0f, 10.0f)] float enemyYRandomOffset = 10f;
+    [SerializeField] [Range(-5.0f, 5.0f)] float enemyXMin = -1.3f;
+    [SerializeField] [Range(-5.0f, 5.0f)] float enemyXMax = 1.3f;
+
+    private Transform lastEnemyTransform;
+
 
     void Start()
     { 
@@ -37,12 +47,15 @@ public class LevelGenerator : MonoBehaviour
     private void Update()
     {
         // Spawn next wall part when player is less than a certain distance away from the last/upcoming end position
-        if ((lastEndPosition.y - player.transform.position.y) < playerDistSpawnWallPart)
+        if ((lastEndPosition.y - player.position.y) < playerDistSpawnWallPart)
         {
             SpawnWallPart();
             SpawnPlatforms();
+            SpawnEnemies();
         }
     }
+
+    // <------------------------------ WALLS ------------------------------> //
 
     void SpawnWallPart()
     {
@@ -56,6 +69,8 @@ public class LevelGenerator : MonoBehaviour
         Transform wallSectionTransform = Instantiate(randomWallSection, spawnPosition, Quaternion.identity);
         return wallSectionTransform;
     }
+
+    // <------------------------------ PLATFORMS ------------------------------> //
 
     void SpawnPlatforms()
     {
@@ -78,5 +93,30 @@ public class LevelGenerator : MonoBehaviour
         Transform randomPlatform = platforms[Random.Range(0, platforms.Length)];
         Transform platformTransform = Instantiate(randomPlatform, spawnPosition, Quaternion.identity);
         return platformTransform;
+    }
+
+    // <------------------------------ ENEMIES ------------------------------> //
+
+    void SpawnEnemies()
+    {
+        for (int i = 0; i < enemiesPerSection; i++)
+        {
+            SpawnEnemy();
+        }
+    }
+
+    void SpawnEnemy()
+    {
+        float newEnemyYPos = lastEnemyTransform.position.y + enemyYSpacing + Random.Range(0, enemyYRandomOffset);
+        float newEnemyXPos = Random.Range(enemyXMin, enemyXMax);
+        Vector3 newSpawnPosition = new Vector3(newEnemyXPos, newEnemyYPos, 0);
+        lastEnemyTransform = SpawnEnemy(newSpawnPosition);
+    }
+
+    Transform SpawnEnemy(Vector3 spawnPosition)
+    {
+        Transform randomEnemy = enemies[Random.Range(0, enemies.Length)];
+        Transform enemyTransform = Instantiate(randomEnemy);
+        return enemyTransform;
     }
 }
