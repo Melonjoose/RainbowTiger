@@ -51,6 +51,7 @@ public class UI_Manager : MonoBehaviour
 
     public void GamePause()
     {
+        AudioManager.Instance.PlaySFX("SFX_UIClick");
         menuPause.SetActive(true);
         isPaused = true;
         Time.timeScale = 0;
@@ -58,6 +59,7 @@ public class UI_Manager : MonoBehaviour
 
     public void GameResume()
     {
+        AudioManager.Instance.PlaySFX("SFX_UIClick");
         menuPause.SetActive(false);
         isPaused = false;
         Time.timeScale = 1;
@@ -65,6 +67,7 @@ public class UI_Manager : MonoBehaviour
 
     public void MenuMain()
     {
+        AudioManager.Instance.PlaySFX("SFX_UIClick");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         menuInstructions.SetActive(false);
@@ -73,6 +76,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ShowCredits()
     {
+        AudioManager.Instance.PlaySFX("SFX_UIClick");
         if (menuCredits.activeSelf) // Check if menuCredits is currently active
         {
             menuCredits.SetActive(false); // Deactivate it
@@ -85,6 +89,7 @@ public class UI_Manager : MonoBehaviour
 
     public void ShowInstructions()
     {
+        AudioManager.Instance.PlaySFX("SFX_UIClick");
         menuInstructions.SetActive(true);
     }
 }
