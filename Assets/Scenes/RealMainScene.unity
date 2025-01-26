@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager_ET
       objectReference: {fileID: 0}
+    - target: {fileID: 7433660723160394310, guid: 6c8280fda9a752944b4f68c463e95956, type: 3}
+      propertyPath: sfxSounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7490867587235379416, guid: 6c8280fda9a752944b4f68c463e95956, type: 3}
       propertyPath: m_LocalPosition.x
       value: 163.99635

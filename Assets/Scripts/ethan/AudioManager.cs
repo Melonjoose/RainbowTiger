@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using JetBrains.Annotations;
+using static Unity.VisualScripting.Member;
+using Unity.VisualScripting;
 
 public class AudioManager : MonoBehaviour
 {
@@ -90,8 +92,13 @@ public class AudioManager : MonoBehaviour
 
             else
             {
+              
+                sfxSource.clip = s.clip;
                 sfxSource.pitch = s.pitch;
-                sfxSource.PlayOneShot(s.clip, s.volume);
+                sfxSource.loop = s.loop;
+                sfxSource.volume = s.volume;
+
+                sfxSource.Play();
             }
         }
     }

@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public UI_Manager uiManager;
+
     [Header("Player Settings")]
     [SerializeField] Transform player; 
     public float playerHeight; //absolute height of player, used in level generator
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        uiManager = FindObjectOfType<UI_Manager>();
         playerScore = 0;
         isBossFightActive = false;
     }
@@ -55,19 +58,29 @@ public class GameManager : MonoBehaviour
 
     public void TriggerPlayerDeath()
     {
-        //Play sound, animation, etc.
+        StartCoroutine(HandlePlayerDeath());
+    }
 
+    private IEnumerator HandlePlayerDeath()
+    {
+        Debug.Log("Player death sequence started...");
+        AudioManager.Instance.StopOST();
+        AudioManager.Instance.PlaySFX("SFX_Gum_Death");
+        yield return new WaitForSeconds(2.0f);
 
-        //Reset game or show game over screen
         finalHeightText.text = Mathf.Round(playerScore).ToString();
-
-        UI_Manager uiManager = FindObjectOfType<UI_Manager>();
 
         if (uiManager != null)
         {
             uiManager.GameOver();
-            Debug.Log("GameOver method triggered!");
+            Time.timeScale = 0;
         }
+        else
+        {
+            Debug.LogError("UI_Manager instance is missing.");
+        }
+
+        Debug.Log("Player death sequence completed.");
     }
 
 }

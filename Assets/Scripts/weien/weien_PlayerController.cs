@@ -109,6 +109,8 @@ public class weien_PlayerController : MonoBehaviour
 
             if (grappleHit.collider != null)
             {
+                AudioManager.Instance.PlaySFX("SFX_Gum_Grapple"); 
+
                 grapplePoint = grappleHit.point;
                 grapplePoint.z = 0;
                 ropeObject.line.enabled = true;
@@ -146,6 +148,7 @@ public class weien_PlayerController : MonoBehaviour
             {
                 Debug.Log("test");
                 animator.SetTrigger("FloatActivated");
+                AudioManager.Instance.PlaySFX("SFX_Gum_Inflate");
                 floatActivated = true;
             }
             holdTimer += Time.deltaTime;
@@ -196,6 +199,7 @@ public class weien_PlayerController : MonoBehaviour
     }
     void BubbleBullet()
     {
+        AudioManager.Instance.PlaySFX("SFX_Gum_Shoot");
         animator.SetTrigger("Shoot");
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().AddForce(pivotTransform.up * bulletSpeed, ForceMode2D.Impulse);
@@ -203,7 +207,7 @@ public class weien_PlayerController : MonoBehaviour
 
     void BubbleFloat()
     {
-
+        
         if ((mousePosition.x < transform.position.x))
         {
             floatDirection.x = -leftRightStrength;

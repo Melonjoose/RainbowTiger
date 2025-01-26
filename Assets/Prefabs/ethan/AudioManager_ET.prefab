@@ -51,63 +51,83 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 94449fa3ea34e6f4ab5c9942fc2c6509, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: OST_Death
     clip: {fileID: 8300000, guid: dc57819816f631e48a87ad7610c8aa6d, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   sfxSounds:
   - name: SFX_UIClick
     clip: {fileID: 8300000, guid: 2b378376ead1eb54fa6bf799c3e0794b, type: 3}
     volume: 1
     pitch: 1.5
+    loop: 0
   - name: SFX_Gum_Inflate
     clip: {fileID: 8300000, guid: ebaa7e0128fbcb742a4bc758f091e657, type: 3}
-    volume: 1
-    pitch: 0.6
+    volume: 0.7
+    pitch: 0.5
+    loop: 0
   - name: SFX_Gum_Shoot
     clip: {fileID: 8300000, guid: ebd1fa638e8f3894e8a502b3e9116b90, type: 3}
-    volume: 1
-    pitch: 1
+    volume: 0.8
+    pitch: 1.5
+    loop: 0
   - name: SFX_Gum_Death
     clip: {fileID: 8300000, guid: 20aa2a733906d0f4193735b1d16a0a25, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Gum_Grapple
     clip: {fileID: 8300000, guid: b2e84713ba9d70b4bb1f4551b8e64f21, type: 3}
-    volume: 1
+    volume: 0.7
     pitch: 1
+    loop: 0
   - name: SFX_Worm_Idle
     clip: {fileID: 8300000, guid: 0731608642945b047a66b49a4970a68d, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Flies_Laugh
     clip: {fileID: 8300000, guid: 60ceecfb76ab9684a927843d38b5f327, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Flies_NoLaugh
     clip: {fileID: 8300000, guid: 46772273a312cad42a7ca4751ab19cc6, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Spider_Death
     clip: {fileID: 8300000, guid: 4663ce6a96a94c847a0ce0d424599560, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Spider_Movement01
     clip: {fileID: 8300000, guid: 46e6e7824789ac54ebee65f6284a19a4, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Spider_Movement02
     clip: {fileID: 8300000, guid: 28e2f7ee74cc6914d80eaed66384fadb, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
   - name: SFX_Spider_Spawn
     clip: {fileID: 8300000, guid: 727cfdae1c2b35b4c88fe4f3ca4bcdcb, type: 3}
     volume: 1
     pitch: 1
+    loop: 0
+  - name: SFX_Worm_Idle
+    clip: {fileID: 8300000, guid: b2e84713ba9d70b4bb1f4551b8e64f21, type: 3}
+    volume: 0.6
+    pitch: 0.5
+    loop: 1
   - name: 
     clip: {fileID: 0}
     volume: 1
     pitch: 1
+    loop: 0
   ostSource: {fileID: 1966381315262886358}
   sfxSource: {fileID: 5270578174275259242}
   isOSTMuted: 0
