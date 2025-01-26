@@ -17,6 +17,9 @@ public class TriggerBossFight : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             gameManager.isBossFightActive = true;
+            AudioManager.Instance.StopOST();
+            AudioManager.Instance.PlaySFX("SFX_Spider_Spawn");
+            AudioManager.Instance.PlayOST("OST_Boss");
         }
     }
 }

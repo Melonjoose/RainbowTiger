@@ -32,7 +32,7 @@ public class EnemyFlyController : MonoBehaviour
     {
         sprite = gameObject.transform.GetChild(0).gameObject;
         scale = sprite.transform.localScale.x;
-
+        AudioManager.Instance.PlaySFX("SFX_Flies_Laugh");
         player = GameObject.FindGameObjectWithTag("Player");
         currentHealth = maxHealth;
     }
@@ -71,6 +71,7 @@ public class EnemyFlyController : MonoBehaviour
         if (currentHealth <= 0)
         {
             isAlive = false;
+            AudioManager.Instance.PlaySFX("SFX_Enemy_Death");
             Debug.Log("Fly has died.");
             animator.SetTrigger("Death");
             Destroy(gameObject, 1f);

@@ -54,6 +54,8 @@ public class GameManager : MonoBehaviour
         //Open the exit door
         currentBossSectionTransform.Find("Exit Door").gameObject.SetActive(false);
         isBossFightActive = false;
+        AudioManager.Instance.StopOST();
+        AudioManager.Instance.PlayOST("OST_Main");
     }
 
     public void TriggerPlayerDeath()
@@ -67,7 +69,7 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.StopOST();
         AudioManager.Instance.PlaySFX("SFX_Gum_Death");
         yield return new WaitForSeconds(2.0f);
-
+        AudioManager.Instance.PlayOST("OST_Death");
         finalHeightText.text = Mathf.Round(playerScore).ToString();
 
         if (uiManager != null)

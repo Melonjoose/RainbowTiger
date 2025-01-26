@@ -36,6 +36,7 @@ public class weien_EnemySlug : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         currentHealth = maxHealth;
         scale = transform.localScale.y;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -108,9 +109,16 @@ public class weien_EnemySlug : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         //Play Animation
         animator.SetTrigger("Shoot");
+<<<<<<< Updated upstream
         yield return new WaitForSeconds(.5f);
         GameObject slugBullet = Instantiate(projectile, shootPoint.transform.position, Quaternion.identity);
         Vector2 direction = player.transform.position - shootPoint.transform.position;
+=======
+        AudioManager.Instance.PlaySFX("SFX_Slug_Shoot");
+        yield return new WaitForSeconds(seconds);
+        GameObject slugBullet = Instantiate(projectile, shootPoint.position, Quaternion.identity);
+        Vector2 direction = player.transform.position - shootPoint.position;
+>>>>>>> Stashed changes
         slugBullet.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
         isAttacking = false;
         if (moveUp) { moveUp = false; } else { moveUp = true; }
@@ -129,6 +137,7 @@ public class weien_EnemySlug : MonoBehaviour
 
     void Death()
     {
+        AudioManager.Instance.PlaySFX("SFX_Enemy_Death");
         deathCalled = true;
         Destroy(gameObject);
     }
