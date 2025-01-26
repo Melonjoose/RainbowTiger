@@ -432,6 +432,7 @@ MonoBehaviour:
   playerHeight: 0
   playerScore: 0
   heightText: {fileID: 1498938886}
+  finalHeightText: {fileID: 0}
   isBossFightActive: 0
   currentBossSectionTransform: {fileID: 0}
 --- !u!1 &403428567
@@ -1079,17 +1080,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss Section
       objectReference: {fileID: 0}
-    - target: {fileID: 2095129398719667817, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.67
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
       propertyPath: m_LocalPosition.z
