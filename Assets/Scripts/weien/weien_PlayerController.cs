@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class weien_PlayerController : MonoBehaviour
 {
+
+
     [Header("Animator")]
     public Animator animator;
     public bool onWall = false;
@@ -114,6 +116,14 @@ public class weien_PlayerController : MonoBehaviour
                 joint.connectedAnchor = grapplePoint;
                 joint.distance = grappleLength;
                 StartCoroutine(StartGrapple(timeUntilGrapple));
+
+                UI_Manager uiManager = FindObjectOfType<UI_Manager>();
+
+                if (uiManager != null)
+                {
+                    uiManager.GameStart();
+                    Debug.Log("GameStart method triggered!");
+                }
             }
 
             if (isFloating)
@@ -221,6 +231,16 @@ public class weien_PlayerController : MonoBehaviour
     private void Death()
     {
         deathCalled = true;
+
+
+        GameManager GameManager = FindObjectOfType<GameManager>();
+
+        if (GameManager != null)
+        {
+            GameManager.TriggerPlayerDeath();
+            Debug.Log("TriggerPlayerDeath method triggered!");
+        }
+
         Debug.Log("Player has died.");
     }
 

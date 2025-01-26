@@ -7,12 +7,14 @@ public class UI_Manager : MonoBehaviour
 {
     public GameObject menuPause;
     public GameObject menuMain;
+    public GameObject menuGameOver;
     public GameObject menuInstructions;
     public GameObject menuCredits;
     public GameObject gameUI;
 
     public static bool isPaused = false;
     public static bool isPlaying = false;
+    public static bool isOver = false;
 
     //ON DEATH WHAT HAPPENS
 
@@ -55,6 +57,14 @@ public class UI_Manager : MonoBehaviour
         menuPause.SetActive(true);
         isPaused = true;
         Time.timeScale = 0;
+    }
+
+    public void GameOver()
+    {
+        //AudioManager.Instance.PlaySFX("SFX_UIClick");
+        menuGameOver.SetActive(true);
+        gameUI.SetActive(false);
+        isOver = true;
     }
 
     public void GameResume()

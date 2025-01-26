@@ -57,10 +57,10 @@ public class GameManager : MonoBehaviour
     {
         //Play sound, animation, etc.
 
+
         //Reset game or show game over screen
         finalHeightText.text = Mathf.Round(playerScore).ToString();
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+        UI_Manager.isOver = true;
     }
 
 }
