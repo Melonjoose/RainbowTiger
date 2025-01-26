@@ -30,6 +30,7 @@ public class weien_SpiderBossLegs : MonoBehaviour
     {
         if (collision.gameObject.tag == "PlayerWeapons")
         {
+            AudioManager.Instance.PlaySFX("SFX_Spider_Movement02");
             currentHealth--;
             damagedColorScript.StartCoroutine("HitColor");
         }

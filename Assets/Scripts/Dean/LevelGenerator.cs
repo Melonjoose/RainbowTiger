@@ -165,19 +165,20 @@ public class LevelGenerator : MonoBehaviour
     void SpawnEnemies()
     {
         enemyYPos = lastEndPosition.y;
-        
+        int n = 0;
         for (int i = 0; i < enemiesPerSection; i++)
         {
             bool canSpawnHere = false;
             Vector3 newSpawnPosition = new Vector3(0, 0, 0);
             //Calculates the next semi-random position to spawn the module
-            while (!canSpawnHere)
+            while (!canSpawnHere && n>20)
             {
                 float newModuleYPos = enemyYPos + enemyYSpacing + Random.Range(0, enemyYRandomOffset);
                 float newModuleXPos = Random.Range(enemyXMin, enemyXMax);
 
                 newSpawnPosition = new Vector3(newModuleXPos, newModuleYPos, 0);
                 canSpawnHere = CheckSpawnPositionValidity(newSpawnPosition);
+                n++;
             }
 
             //Chooses a random module from the desired module array to spawn

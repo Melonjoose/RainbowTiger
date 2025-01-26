@@ -77,6 +77,7 @@ public class weien_SpiderBossMain : MonoBehaviour
     {
         if(collision.gameObject.tag == "PlayerWeapons" && allLegsDestroyed)
         {
+            AudioManager.Instance.PlaySFX("SFX_Spider_Spawn");
             currentHealth--;
             damagedColorScript.StartCoroutine("HitColor");
         }
@@ -84,6 +85,7 @@ public class weien_SpiderBossMain : MonoBehaviour
     IEnumerator ShootAtPlayer(float seconds)
     {
         //Play Animation
+        AudioManager.Instance.PlaySFX("SFX_Spider_Movement01");
         yield return new WaitForSeconds(seconds);
         for(int i = 0; i<numOfBullets; i++)
         {
@@ -94,6 +96,8 @@ public class weien_SpiderBossMain : MonoBehaviour
 
     void Death()
     {
+
+        AudioManager.Instance.PlaySFX("SFX_Spider_Death");
         deathCalled = true;
         Destroy(gameObject);
         gameManager.WinBossFight();

@@ -45,6 +45,7 @@ public class EnemyTapewormController : MonoBehaviour
 
     private void OnEnable()
     {
+        
         sprite = gameObject.transform.GetChild(0).gameObject;
         elapsedTime = 0;
         state = EnemyState.Idle;
@@ -102,6 +103,7 @@ public class EnemyTapewormController : MonoBehaviour
     #region ATTACK METHODS
     private void WindupAttack()
     {
+        AudioManager.Instance.PlaySFX("SFX_Worm_Idle");
         LeanTween.moveLocalX(sprite, -3 * isFacingRightScale, windupDuration).setEaseOutBack();
     }
 
