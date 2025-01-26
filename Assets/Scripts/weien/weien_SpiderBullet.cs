@@ -9,8 +9,8 @@ public class weien_SpiderBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector2 direction = GameObject.FindGameObjectWithTag("Player").GetComponent<weien_PlayerController>().GetRandomPositionNearPlayer();
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * moveSpeed;
+        Vector2 direction = Random.insideUnitCircle.normalized;
+        rb.velocity = direction * moveSpeed;
     }
 
     // Update is called once per frame

@@ -29,6 +29,8 @@ public class weien_StickDirectionCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
         RaycastHit2D upHit = Physics2D.Raycast(
             origin: transform.position,
             direction: playerTransform.up,
@@ -59,18 +61,31 @@ public class weien_StickDirectionCheck : MonoBehaviour
 
         if (upHit.collider != null)
         {
+
             stickDirection = 2;
         }
         else if (downHit.collider != null)
         {
+            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            {
+                animator.SetTrigger("IdleGround");
+            }
             stickDirection = 1;
         }
         else if (leftHit.collider != null)
         {
+            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            {
+                animator.SetTrigger("IdleWall");
+            }
             stickDirection = 3;
         }
         else if (rightHit.collider != null)
         {
+            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            {
+                animator.SetTrigger("IdleWall");
+            }
             stickDirection = 4;
         }
         else if (upHit.collider == null && downHit.collider == null && leftHit.collider == null && rightHit.collider == null)
@@ -78,12 +93,12 @@ public class weien_StickDirectionCheck : MonoBehaviour
             stickDirection = 5;
         }
 
-
         switch (stickDirection)
         {
             case 1:
                 if (stickingDown) { break; }
                 //Debug.Log("Stick Down");
+                
                 ResetBooleans(1);
                 SetAnimState(1);
                 stickingDown = true;
@@ -182,7 +197,9 @@ public class weien_StickDirectionCheck : MonoBehaviour
                 transform.localScale = new Vector3(scale, scale, scale);
                 break;
             case 5:
-                transform.localScale = new Vector3(scale, scale, scale);
+                Vector3 resetY = transform.localScale;
+                resetY.y = scale;
+                transform.localScale = resetY;
                 break;
         }
     }

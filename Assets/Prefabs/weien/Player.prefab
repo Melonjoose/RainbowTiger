@@ -214,7 +214,7 @@ MonoBehaviour:
   floatActivated: 0
   groundCheckTransform: {fileID: 7601153727376661947}
   groundCheckRadius: 0.6
-  randomPosRadius: 3
+  randomPosRadius: 5
 --- !u!95 &8238383284119014623
 Animator:
   serializedVersion: 5

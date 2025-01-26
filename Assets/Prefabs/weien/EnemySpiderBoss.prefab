@@ -493,7 +493,7 @@ MonoBehaviour:
   - {fileID: 0}
   spiderBullet: {fileID: 1176819681988501673, guid: 018a23c23ec3a504fa000b1ca419faa3, type: 3}
   shootPoint: {fileID: 8395669464363357317}
-  numOfBullets: 4
+  numOfBullets: 8
   attackCooldown: 5
 --- !u!95 &493030438646542741
 Animator:
