@@ -208,7 +208,7 @@ Transform:
   m_GameObject: {fileID: 52558824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.88, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -364,7 +364,7 @@ MonoBehaviour:
   - {fileID: 2628899921580294190, guid: a3d08af29bcc24f46a79043c6fd7cdd7, type: 3}
   playerDistSpawnWallPart: 10
   bossSection: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-  bossSectionHeightInterval: 50
+  bossSectionHeightInterval: 30
   lastEndPosition: {x: 0, y: 0, z: 0}
   platform_start: {fileID: 1759563275}
   platforms:
@@ -4463,7 +4463,7 @@ Transform:
   m_GameObject: {fileID: 1444456925}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4486,7 +4486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1747533890}
   smoothTime: 0.05
-  offsetY: -3
+  offsetY: 4.28
   cameraZPos: -10
 --- !u!1 &1514367709
 GameObject:
@@ -6167,7 +6167,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4529665326941616875, guid: 0b689f866df0fe643bc4d5b52a3a0cd0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4529665326941616875, guid: 0b689f866df0fe643bc4d5b52a3a0cd0, type: 3}
       propertyPath: m_LocalPosition.z
