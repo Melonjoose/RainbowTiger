@@ -9,6 +9,7 @@ public class weien_SpiderBossMain : MonoBehaviour
     public float currentHealth;
     public int totalLegs = 8;
     public int currentLegs;
+    public weien_DamagedColor damagedColorScript;
     private bool deathCalled = false;
     [SerializeField] private bool allLegsDestroyed = false;
 
@@ -74,6 +75,7 @@ public class weien_SpiderBossMain : MonoBehaviour
         if(collision.gameObject.tag == "PlayerWeapons" && allLegsDestroyed)
         {
             currentHealth--;
+            damagedColorScript.StartCoroutine("HitColor");
         }
     }
     IEnumerator ShootAtPlayer(float seconds)

@@ -7,6 +7,7 @@ public class weien_SpiderBossLegs : MonoBehaviour
     private bool deathCalled = false;
     public float maxHealth;
     public float currentHealth;
+    public weien_DamagedColor damagedColorScript;
     [SerializeField] private weien_SpiderBossMain spiderBossMain;
 
     void Start()
@@ -30,6 +31,7 @@ public class weien_SpiderBossLegs : MonoBehaviour
         if (collision.gameObject.tag == "PlayerWeapons")
         {
             currentHealth--;
+            damagedColorScript.StartCoroutine("HitColor");
         }
     }
 }

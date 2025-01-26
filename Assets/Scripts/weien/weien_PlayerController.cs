@@ -6,10 +6,15 @@ using UnityEngine;
 
 public class weien_PlayerController : MonoBehaviour
 {
+    [Header("Animator")]
+    public Animator animator;
+    public bool onWall = false;
+
     [Header("Health Settings")]
     public float maxHealth;
     public float currentHealth;
     public GameObject mainCamHolder;
+    public weien_DamagedColor damagedColorScript;
     private bool deathCalled = false;
 
     [Header("Grapple Settings")]
@@ -37,6 +42,7 @@ public class weien_PlayerController : MonoBehaviour
     private float holdTimer;
     private Vector2 floatDirection;
     private bool isFloating = false;
+    [SerializeField] private bool floatActivated = false;
 
     [Header("Grounded Check")]
     public Transform groundCheckTransform;
@@ -73,6 +79,15 @@ public class weien_PlayerController : MonoBehaviour
         //Mini-Jump when right-click
         if (Input.GetMouseButtonDown(1) && isGrounded && grappleCooldownTimer <= 0)
         {
+            if (!onWall)
+            {
+                animator.SetTrigger("JumpGround");
+            }
+            else
+            {
+                animator.SetTrigger("JumpWall");
+            }
+            
             rb.AddForce(pivotTransform.up * 8, ForceMode2D.Impulse);
             ropeObject.line.enabled = false;
             joint.enabled = false;
@@ -91,6 +106,7 @@ public class weien_PlayerController : MonoBehaviour
 
             if (grappleHit.collider != null)
             {
+                animator.SetTrigger("Shoot");
                 grapplePoint = grappleHit.point;
                 grapplePoint.z = 0;
                 ropeObject.line.enabled = true;
@@ -104,14 +120,20 @@ public class weien_PlayerController : MonoBehaviour
             {
                 isFloating = false;
                 holdTimer = 0;
+                animator.SetTrigger("IdleGround");
             }
-
+            floatActivated = false;
             grappleCooldownTimer = grappleCooldown;
         }
 
         //BubbleFloat when right-click is held for an amount of time
         if (Input.GetMouseButton(1) && grappleCooldownTimer <= 0)
         {
+            if (!floatActivated) 
+            {
+                animator.SetTrigger("FloatActivated");
+                floatActivated = true;
+            }
             holdTimer += Time.deltaTime;
             if (holdTimer >= timeBeforeStart)
             {
@@ -177,6 +199,7 @@ public class weien_PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            damagedColorScript.StartCoroutine("HitColor");
             mainCamHolder.GetComponent<Animator>().SetTrigger("PlayerHit");
             joint.enabled = false;
             rb.velocity = Vector3.zero;

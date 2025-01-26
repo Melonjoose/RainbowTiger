@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class weien_StickDirectionCheck : MonoBehaviour
 {
+    public Animator animator;
     public float rayDistance = 2f;
     public Transform playerTransform;
     public LayerMask wallLayer;
@@ -18,10 +19,11 @@ public class weien_StickDirectionCheck : MonoBehaviour
     private bool stickingRight = false;
     private bool stickingMidAir = false;
 
+    private float scale;
     // Start is called before the first frame update
     void Start()
     {
-
+        scale = transform.localScale.x;
     }
 
     // Update is called once per frame
@@ -159,19 +161,28 @@ public class weien_StickDirectionCheck : MonoBehaviour
         switch (direction)
         {
             case 1:
-
+                animator.SetTrigger("IdleGround");
+                GetComponent<weien_PlayerController>().onWall = false;
+                transform.localScale = new Vector3(scale, scale, scale);
                 break;
             case 2:
-
+                animator.SetTrigger("IdleGround");
+                GetComponent<weien_PlayerController>().onWall = false;
+                transform.localScale = new Vector3(scale, -scale, scale); 
                 break;
             case 3:
-
+                animator.SetTrigger("IdleWall");
+                GetComponent<weien_PlayerController>().onWall = true;
+                transform.localScale = new Vector3(-scale, scale, scale);
+                Debug.Log("left");
                 break;
             case 4:
-
+                animator.SetTrigger("IdleWall");
+                GetComponent<weien_PlayerController>().onWall = true;
+                transform.localScale = new Vector3(scale, scale, scale);
                 break;
             case 5:
-
+                transform.localScale = new Vector3(scale, scale, scale);
                 break;
         }
     }

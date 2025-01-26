@@ -8,6 +8,7 @@ public class weien_EnemySlug : MonoBehaviour
     [Header("Health Settings")]
     public float maxHealth;
     public float currentHealth;
+    public weien_DamagedColor damagedColorScript;
     private bool deathCalled = false;
 
     [Header("Movement Settings")]
@@ -117,6 +118,7 @@ public class weien_EnemySlug : MonoBehaviour
         if(collision.gameObject.tag == "PlayerWeapons")
         {
             currentHealth--;
+            damagedColorScript.StartCoroutine("HitColor");
         }
     }
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1793303149685179056}
   - component: {fileID: 7640162148023939101}
   - component: {fileID: 793997373507489077}
+  - component: {fileID: 7817289011302480577}
   m_Layer: 8
   m_Name: Leg_01
   m_TagString: Enemy
@@ -135,7 +136,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 7817289011302480577}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &7817289011302480577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484219429272165887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &677100497932515386
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,6 +163,7 @@ GameObject:
   - component: {fileID: 8979264558523983371}
   - component: {fileID: 7368075821604381363}
   - component: {fileID: 1357169755573218588}
+  - component: {fileID: 908019422270580554}
   m_Layer: 8
   m_Name: Leg_06
   m_TagString: Enemy
@@ -271,7 +287,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 908019422270580554}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &908019422270580554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677100497932515386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &1468049928841469095
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +316,7 @@ GameObject:
   - component: {fileID: 6037774826320072144}
   - component: {fileID: 1803729453033744318}
   - component: {fileID: 493030438646542741}
+  - component: {fileID: 6675282879836692080}
   m_Layer: 8
   m_Name: EnemySpiderBoss
   m_TagString: Enemy
@@ -447,6 +478,7 @@ MonoBehaviour:
   currentHealth: 0
   totalLegs: 8
   currentLegs: 0
+  damagedColorScript: {fileID: 6675282879836692080}
   allLegsDestroyed: 0
   moveSpeed: 10
   startWaitTime: 1.2
@@ -484,6 +516,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6675282879836692080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468049928841469095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &1521206482409776054
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,6 +541,7 @@ GameObject:
   - component: {fileID: 2973593977318180538}
   - component: {fileID: 2751740628798900105}
   - component: {fileID: 5675009590427553555}
+  - component: {fileID: 5687402784074459078}
   m_Layer: 8
   m_Name: Leg_05
   m_TagString: Enemy
@@ -619,7 +665,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 5687402784074459078}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &5687402784074459078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521206482409776054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &3862266464111120984
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +692,7 @@ GameObject:
   - component: {fileID: 4263820088155965800}
   - component: {fileID: 8650635624143069512}
   - component: {fileID: 4078879015293335016}
+  - component: {fileID: 6379179322322948880}
   m_Layer: 8
   m_Name: Leg_04
   m_TagString: Enemy
@@ -755,7 +816,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 6379179322322948880}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &6379179322322948880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862266464111120984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &3986630547151813107
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +874,7 @@ GameObject:
   - component: {fileID: 5306577908196056359}
   - component: {fileID: 5534837686973146245}
   - component: {fileID: 4805954875435981867}
+  - component: {fileID: 6382136200796616558}
   m_Layer: 8
   m_Name: Leg_03
   m_TagString: Enemy
@@ -922,7 +998,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 6382136200796616558}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &6382136200796616558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4822018394555908439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &6386405973772274612
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +1025,7 @@ GameObject:
   - component: {fileID: 8775168997888979346}
   - component: {fileID: 427634186999305392}
   - component: {fileID: 4982845105932323822}
+  - component: {fileID: 7356450823801549027}
   m_Layer: 8
   m_Name: Leg_02
   m_TagString: Enemy
@@ -1058,7 +1149,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 7356450823801549027}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &7356450823801549027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6386405973772274612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &6860315539215697869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1176,7 @@ GameObject:
   - component: {fileID: 1157679520394116995}
   - component: {fileID: 5787643515272239339}
   - component: {fileID: 8203817698862239972}
+  - component: {fileID: 3092997595030988576}
   m_Layer: 8
   m_Name: Leg_07
   m_TagString: Enemy
@@ -1194,7 +1300,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 3092997595030988576}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &3092997595030988576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860315539215697869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1
 --- !u!1 &6920001935296964530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1327,7 @@ GameObject:
   - component: {fileID: 8151304045341560817}
   - component: {fileID: 6076059495783876972}
   - component: {fileID: 4665489754232053655}
+  - component: {fileID: 2114841461345379404}
   m_Layer: 8
   m_Name: Leg_08
   m_TagString: Enemy
@@ -1330,4 +1451,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   currentHealth: 0
+  damagedColorScript: {fileID: 2114841461345379404}
   spiderBossMain: {fileID: 1803729453033744318}
+--- !u!114 &2114841461345379404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6920001935296964530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dd5437655307d46ab712549a9fa542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorDuration: 0.1

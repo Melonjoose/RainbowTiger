@@ -8,6 +8,8 @@ public class EnemyFlyController : MonoBehaviour
     [SerializeField] private GameObject sprite;
     public GameObject player;
     private float scale;
+    public weien_DamagedColor damagedColorScript;
+    public Animator animator;
     #endregion
 
     #region PARAMETERS
@@ -15,6 +17,7 @@ public class EnemyFlyController : MonoBehaviour
     public float movementSpeed;
     public float maxHealth;
     public float currentHealth;
+    private bool isAlive = true;
     #endregion
 
     #region COLLISION CHECKS
@@ -36,35 +39,41 @@ public class EnemyFlyController : MonoBehaviour
 
     private void Update()
     {
-        //FOLLOW PLAYER
-        float x = player.transform.position.x;
-        float y = player.transform.position.y;
-        transform.position = Vector2.MoveTowards(transform.position, new Vector3(x, y, transform.position.z), movementSpeed * Time.deltaTime);
-
-        //FLIP
-        Vector3 direction = (player.transform.position - transform.position).normalized;
-        if (direction.x < 0)
+        if (isAlive) 
         {
-            sprite.transform.localScale = new Vector3(scale, scale, scale);
-        }
+            //FOLLOW PLAYER
+            float x = player.transform.position.x;
+            float y = player.transform.position.y;
+            transform.position = Vector2.MoveTowards(transform.position, new Vector3(x, y, transform.position.z), movementSpeed * Time.deltaTime);
 
-        else
-        {
-            sprite.transform.localScale = new Vector3(-scale, scale, scale);
-        }
+            //FLIP
+            Vector3 direction = (player.transform.position - transform.position).normalized;
+            if (direction.x < 0)
+            {
+                sprite.transform.localScale = new Vector3(scale, scale, scale);
+            }
+
+            else
+            {
+                sprite.transform.localScale = new Vector3(-scale, scale, scale);
+            }
+        } 
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "PlayerWeapons")
         {
+            damagedColorScript.StartCoroutine("HitColor");
             currentHealth--;
         }
 
         if (currentHealth <= 0)
         {
+            isAlive = false;
             Debug.Log("Fly has died.");
-            Destroy(gameObject);
+            animator.SetTrigger("Death");
+            Destroy(gameObject, 1f);
         }
     }
 
