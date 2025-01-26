@@ -429,7 +429,7 @@ MonoBehaviour:
   - {fileID: 6921389986681653248, guid: ab64eabde6ccb4ca6869bdc9d7fe0404, type: 3}
   playerDistSpawnWallPart: 10
   bossSection: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
-  bossSectionHeightInterval: 30
+  bossSectionHeightInterval: 100
   lastEndPosition: {x: 0, y: 0, z: 0}
   platform_start: {fileID: 1759563275}
   platforms:

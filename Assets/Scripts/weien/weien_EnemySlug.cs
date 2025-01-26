@@ -30,6 +30,9 @@ public class weien_EnemySlug : MonoBehaviour
     private bool isAttacking;
     private bool shootCalled = false;
 
+
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -103,6 +106,8 @@ public class weien_EnemySlug : MonoBehaviour
     IEnumerator ShootAtPlayer(float seconds)
     {
         //Play Animation
+        animator.SetTrigger("Shoot");
+
         yield return new WaitForSeconds(seconds);
         GameObject slugBullet = Instantiate(projectile, shootPoint.position, Quaternion.identity);
         Vector2 direction = player.transform.position - shootPoint.position;
