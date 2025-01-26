@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public float playerHeight; //absolute height of player, used in level generator
     public float playerScore; //displayed score or highest height of player
     public TextMeshProUGUI heightText;
+    public TextMeshProUGUI finalHeightText;
 
     [Header("Boss Fight Settings")]
     public bool isBossFightActive;
@@ -57,10 +58,8 @@ public class GameManager : MonoBehaviour
     {
         //Play sound, animation, etc.
 
-        // Destroy player with 1s delay
-        // Destroy(player.gameObject, 1f);
-
         //Reset game or show game over screen
+        finalHeightText.text = Mathf.Round(playerScore).ToString();
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
     }
