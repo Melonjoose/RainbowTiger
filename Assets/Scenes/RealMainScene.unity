@@ -369,6 +369,9 @@ MonoBehaviour:
   platform_start: {fileID: 1759563275}
   platforms:
   - {fileID: 6831568111143933458, guid: 6a7674a1da33a4b04921c4b3a98284dc, type: 3}
+  - {fileID: 7392638304724379619, guid: 510b85243bf834f72a5ac3bfa3633be6, type: 3}
+  - {fileID: 8474494030143414185, guid: 078cfba22944644f793ff375c98bcc04, type: 3}
+  - {fileID: 2343006122005609376, guid: 461579ce77ea1471ea8c45ad493a82ad, type: 3}
   platformsPerSection: 2
   platformYSpacing: 2.3
   platformYRandomOffset: 4

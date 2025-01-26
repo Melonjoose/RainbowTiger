@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5611208276013480518}
   - component: {fileID: 3991807618400573942}
+  - component: {fileID: 7552138399675753665}
   m_Layer: 0
   m_Name: Left Funnel Sprite
   m_TagString: Untagged
@@ -84,6 +85,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &7552138399675753665
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 185837417389002397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 5.51, y: 10.8}
+    newSize: {x: 5.51, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.7549999, y: 10.8}
+      - {x: -2.7549999, y: 9.69}
+      - {x: -2.735, y: 9.639999}
+      - {x: -2.655, y: 9.559999}
+      - {x: -2.5549998, y: 9.5}
+      - {x: -2.415, y: 9.389999}
+      - {x: -2.185, y: 9.21}
+      - {x: -1.8149999, y: 8.92}
+      - {x: -1.5849999, y: 8.74}
+      - {x: -0.85499996, y: 8.17}
+      - {x: -0.66499996, y: 8.0199995}
+      - {x: -0.60499996, y: 7.98}
+      - {x: -0.60499996, y: 6.85}
+      - {x: -0.59499997, y: 6.8399997}
+      - {x: -0.59499997, y: 0}
+      - {x: 2.7549999, y: 0}
+      - {x: 2.7549999, y: 10.8}
+  m_UseDelaunayMesh: 0
 --- !u!1 &319318865739338154
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 476009382391056699}
   - component: {fileID: 2106043580300696253}
+  - component: {fileID: 3846186905438098463}
   m_Layer: 0
   m_Name: Right Funnel Sprite
   m_TagString: Untagged
@@ -390,6 +454,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &3846186905438098463
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351077301874415864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 5.51, y: 10.8}
+    newSize: {x: 5.51, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.625, y: 7.99}
+      - {x: 0.755, y: 8.09}
+      - {x: 1.2149999, y: 8.45}
+      - {x: 1.8149999, y: 8.92}
+      - {x: 1.9549999, y: 9.03}
+      - {x: 2.425, y: 9.389999}
+      - {x: 2.565, y: 9.5}
+      - {x: 2.735, y: 9.639999}
+      - {x: 2.7549999, y: 9.69}
+      - {x: 2.7549999, y: 10.8}
+      - {x: -2.7549999, y: 10.8}
+      - {x: -2.7549999, y: 0}
+      - {x: 0.59499997, y: 0}
+      - {x: 0.59499997, y: 6.8399997}
+      - {x: 0.60499996, y: 6.85}
+      - {x: 0.60499996, y: 7.98}
+  m_UseDelaunayMesh: 0
 --- !u!1 &2095129398719667817
 GameObject:
   m_ObjectHideFlags: 0
