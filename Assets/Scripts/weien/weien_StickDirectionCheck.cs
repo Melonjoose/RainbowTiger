@@ -61,12 +61,15 @@ public class weien_StickDirectionCheck : MonoBehaviour
 
         if (upHit.collider != null)
         {
-
+            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+            {
+                animator.SetTrigger("IdleGround");
+            }
             stickDirection = 2;
         }
         else if (downHit.collider != null)
         {
-            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
             {
                 animator.SetTrigger("IdleGround");
             }
@@ -74,7 +77,7 @@ public class weien_StickDirectionCheck : MonoBehaviour
         }
         else if (leftHit.collider != null)
         {
-            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
             {
                 animator.SetTrigger("IdleWall");
             }
@@ -82,7 +85,7 @@ public class weien_StickDirectionCheck : MonoBehaviour
         }
         else if (rightHit.collider != null)
         {
-            if (stateInfo.IsName("AM_Gum_FloatTransition"))
+            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
             {
                 animator.SetTrigger("IdleWall");
             }
