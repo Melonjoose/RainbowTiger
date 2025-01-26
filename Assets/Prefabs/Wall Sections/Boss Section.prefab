@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5611208276013480518}
   - component: {fileID: 3991807618400573942}
   - component: {fileID: 7552138399675753665}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Funnel Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 7714612378222905368}
   - component: {fileID: 7242792969359234600}
   - component: {fileID: 9023132625703731942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Environment_BossRoom_V2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 476009382391056699}
   - component: {fileID: 2106043580300696253}
   - component: {fileID: 3846186905438098463}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Funnel Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 7775968118376138731}
   - component: {fileID: 2669960318369618636}
   - component: {fileID: 5858420203615695423}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Environment_BossRoom_V2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   - component: {fileID: 8734438646499938398}
   - component: {fileID: 2914163315684096881}
   - component: {fileID: 5658251019705375932}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Environment_ExitFromBossRoom_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1473,7 @@ GameObject:
   - component: {fileID: 1771435980248984113}
   - component: {fileID: 4122096932203263961}
   - component: {fileID: 6784740678022185957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Environment_ExitFromBossRoom_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
