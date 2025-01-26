@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         //Play sound, animation, etc.
 
         // Destroy player with 1s delay
-        Destroy(player.gameObject, 1f);
+        // Destroy(player.gameObject, 1f);
 
         //Reset game or show game over screen
         string currentSceneName = SceneManager.GetActiveScene().name;
