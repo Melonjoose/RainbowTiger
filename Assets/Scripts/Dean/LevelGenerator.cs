@@ -19,33 +19,35 @@ public class LevelGenerator : MonoBehaviour
     private float upcomingBossSectionHeight;
     private Transform bossSectionTransform;
 
-    private Vector3 lastEndPosition;
+    public Vector3 lastEndPosition;
+    private Vector3 previousEndPosition;
 
 
     [Header("Platforms")]
     [SerializeField] Transform platform_start;
     [SerializeField] Transform[] platforms;
-    [SerializeField] [Range(0, 10)] int platformsPerSection = 5;
+    [SerializeField] [Range(0, 10)] int platformsPerSection = 2;
     [SerializeField] [Range(0.0f, 10.0f)] float platformYSpacing = 8f;
     [SerializeField] [Range(0.0f, 10.0f)] float platformYRandomOffset = 10f;
     [SerializeField] [Range(-5.0f, 5.0f)] float platformXMin = -1.3f;
     [SerializeField] [Range(-5.0f, 5.0f)] float platformXMax = 1.3f;
 
     [SerializeField] Transform lastPlatformTransform;
-
+    private float platformYPos;
 
     [Header("Enemies")]
     [SerializeField] Transform enemy_start;
     [SerializeField] Transform[] enemies;
-    [SerializeField] [Range(0, 10)] int enemiesPerSection = 3;
+    [SerializeField] [Range(0, 10)] int enemiesPerSection = 1;
     [SerializeField] [Range(0.0f, 10.0f)] float enemyYSpacing = 10f;
     [SerializeField] [Range(0.0f, 10.0f)] float enemyYRandomOffset = 10f;
     [SerializeField] [Range(-5.0f, 5.0f)] float enemyXMin = -1.3f;
     [SerializeField] [Range(-5.0f, 5.0f)] float enemyXMax = 1.3f;
     [SerializeField] [Range(-5.0f, 5.0f)] float spawnCheckRadius = 3f;
+    [SerializeField] [Range(-5.0f, 5.0f)] float spawnPositionValidityBuffer = 0.5f;
 
     [SerializeField] Transform lastEnemyTransform;
- 
+    private float enemyYPos;
 
 
     void Start()
@@ -55,6 +57,7 @@ public class LevelGenerator : MonoBehaviour
         lastEndPosition = wallSection_start.Find("End Position").position;
         lastPlatformTransform = platform_start;
         lastEnemyTransform = enemy_start;
+        platformYPos = lastPlatformTransform.position.y;
 
         upcomingBossSectionHeight = bossSectionHeightInterval;
     }
@@ -67,7 +70,7 @@ public class LevelGenerator : MonoBehaviour
             if ((lastEndPosition.y - player.position.y) < playerDistSpawnWallPart)
             {
                
-                // If player height exceeds the height of the upcoming boss section
+                // If current player height exceeds the height of the upcoming boss section
                 if (gameManager.playerHeight > upcomingBossSectionHeight)
                 {
                     //Increase the required height for the boss section
@@ -77,30 +80,39 @@ public class LevelGenerator : MonoBehaviour
                     bossSectionTransform = Instantiate(bossSection, lastEndPosition, Quaternion.identity);
                     gameManager.currentBossSectionTransform = bossSectionTransform;
 
-                    //Set the last end position to that of the spawned boss section
+                    // Set the last end position to that of the spawned boss section
                     lastEndPosition = bossSectionTransform.Find("End Position").position;
 
                     print("Boss section spawned.");
                     print("Upcoming boss section height: " + upcomingBossSectionHeight);
-                }
-                else
-                {
-                    // Spawn a normal wall section, must spawn platforms before walls so that I can constrain the platforms
-                    SpawnWallPart();
-                    SpawnPlatforms(); 
-                    //lastPlatformTransform = SpawnModules(platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
-                    lastEnemyTransform = SpawnModules(enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
 
+                    SpawnModules();
+                }
+
+                else
+                { 
+                    // Spawn a normal wall section, must spawn platforms before walls so that I can constrain the platforms
+                    SpawnWallPart(); 
                     print("Normal wall section spawned.");
+                    SpawnModules();
+                    //lastPlatformTransform = SpawnModules(lastEndPosition, platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
+                    //lastEnemyTransform = SpawnModules(lastEndPosition, enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
+
                 }
 
             }
         }
     }
 
+    void SpawnModules()
+    {
+        SpawnPlatforms();
+        SpawnEnemies();
+    }
+
     // <------------------------------ WALLS ------------------------------> //
 
-    void SpawnWallPart()
+    public void SpawnWallPart()
     {
         Transform lastWallPartTransform = SpawnWallPart(lastEndPosition);
         lastEndPosition = lastWallPartTransform.Find("End Position").position;
@@ -113,14 +125,82 @@ public class LevelGenerator : MonoBehaviour
         return wallSectionTransform;
     }
 
+    // <------------------------------ PLATFORMS ------------------------------> //
+
+    void SpawnPlatforms()
+    {
+        platformYPos = lastEndPosition.y;
+        
+        for (int i = 0; i < platformsPerSection; i++)
+        {
+            bool canSpawnHere = false;
+            Vector3 newSpawnPosition = new Vector3(0, 0, 0);
+            //Calculates the next semi-random position to spawn the module
+            while (!canSpawnHere)
+            {
+                float newModuleYPos = platformYPos + platformYSpacing + Random.Range(0, platformYRandomOffset);
+                float newModuleXPos = Random.Range(platformXMax, platformXMin);
+
+                newSpawnPosition = new Vector3(newModuleXPos, newModuleYPos, 0);
+                canSpawnHere = CheckSpawnPositionValidity(newSpawnPosition);
+            }
+
+            //Chooses a random module from the desired module array to spawn
+            Transform randomModule = platforms[Random.Range(0, platforms.Length)];
+
+            
+            Transform newModuleTransform = Instantiate(randomModule, newSpawnPosition, Quaternion.identity);
+            lastPlatformTransform = newModuleTransform;
+            platformYPos = lastPlatformTransform.position.y;
+        }
+    }
+
+    // <------------------------------ ENEMIES ------------------------------> //
+
+    void SpawnEnemies()
+    {
+        enemyYPos = lastEndPosition.y;
+        
+        for (int i = 0; i < enemiesPerSection; i++)
+        {
+            bool canSpawnHere = false;
+            Vector3 newSpawnPosition = new Vector3(0, 0, 0);
+            //Calculates the next semi-random position to spawn the module
+            while (!canSpawnHere)
+            {
+                float newModuleYPos = enemyYPos + enemyYSpacing + Random.Range(0, enemyYRandomOffset);
+                float newModuleXPos = Random.Range(enemyXMin, enemyXMax);
+
+                newSpawnPosition = new Vector3(newModuleXPos, newModuleYPos, 0);
+                canSpawnHere = CheckSpawnPositionValidity(newSpawnPosition);
+            }
+
+            //Chooses a random module from the desired module array to spawn
+            Transform randomModule = enemies[Random.Range(0, enemies.Length)];
+
+
+            Transform newModuleTransform = Instantiate(randomModule, newSpawnPosition, Quaternion.identity);
+            lastEnemyTransform = newModuleTransform;
+            enemyYPos = lastEnemyTransform.position.y;
+        }
+    }
+
 
     // <------------------------------ GENERIC MODULE SPAWNER ------------------------------> //
     // Note: cannot assign lastPlatformTransform directly through parameters, need to assign it outside this
 
-    Transform SpawnModules(int modulesPerSection, Transform[] moduleArray, Transform lastModuleTransform, float ModuleYSpacing, float moduleXMin, float moduleXMax, float moduleYRandomOffset)
+    /*
+    Transform SpawnModules(Vector3 lastEndPosition, int modulesPerSection, Transform[] moduleArray, Transform lastModuleTransform, float ModuleYSpacing, float moduleXMin, float moduleXMax, float moduleYRandomOffset)
     {
-        for (int i = 0; i < modulesPerSection; i++)
+        float targetYPos = lastModuleTransform.position.y;
+
+        if (lastModuleTransform.position.y < lastEndPosition.y)
         {
+            targetYPos = lastEndPosition.y;
+        }
+
+        for (int i = 0; i < modulesPerSection; i++)
+        { 
             bool canSpawnHere = false;
             Vector3 newSpawnPosition = new Vector3(0, 0, 0);
 
@@ -128,7 +208,8 @@ public class LevelGenerator : MonoBehaviour
 
             while (!canSpawnHere)
             {
-                float newModuleYPos = lastModuleTransform.position.y + ModuleYSpacing + Random.Range(0, moduleYRandomOffset);
+                
+                float newModuleYPos = targetYPos + ModuleYSpacing + Random.Range(0, moduleYRandomOffset);
                 float newModuleXPos = Random.Range(moduleXMin, moduleXMax);
 
                 newSpawnPosition = new Vector3(newModuleXPos, newModuleYPos, 0);
@@ -146,7 +227,7 @@ public class LevelGenerator : MonoBehaviour
         }
         return lastModuleTransform;
     }
-
+    */
     bool CheckSpawnPositionValidity(Vector3 spawnPosition)
     {
         bool isSpawnPositionValid = true;
@@ -156,12 +237,11 @@ public class LevelGenerator : MonoBehaviour
             Vector3 centrepoint = overlapColliders[i].bounds.center;
             float xExtent = overlapColliders[i].bounds.extents.x;
             float yExtent = overlapColliders[i].bounds.extents.y;
-            float buffer = 0.5f;
-
-            float leftExtent = centrepoint.x - (xExtent + buffer);
-            float rightExtent = centrepoint.x + (xExtent + buffer);
-            float topExtent = centrepoint.y + (yExtent + buffer);
-            float bottomExtent = centrepoint.y - (yExtent + buffer);
+           
+            float leftExtent = centrepoint.x - (xExtent + spawnPositionValidityBuffer);
+            float rightExtent = centrepoint.x + (xExtent + spawnPositionValidityBuffer);
+            float topExtent = centrepoint.y + (yExtent + spawnPositionValidityBuffer);
+            float bottomExtent = centrepoint.y - (yExtent + spawnPositionValidityBuffer);
 
             if (spawnPosition.y >= bottomExtent && spawnPosition.y <= topExtent)
             {
@@ -176,7 +256,7 @@ public class LevelGenerator : MonoBehaviour
     }
 
     // <------------------------------ PLATFORMS ------------------------------> //
-
+    /*
     void SpawnPlatforms()
     {
         for (int i = 0; i < platformsPerSection; i++)
@@ -199,7 +279,7 @@ public class LevelGenerator : MonoBehaviour
         Transform platformTransform = Instantiate(randomPlatform, spawnPosition, Quaternion.identity);
         return platformTransform;
     }
-
+    */
 
     // <------------------------------ ENEMIES ------------------------------> //
     /*
