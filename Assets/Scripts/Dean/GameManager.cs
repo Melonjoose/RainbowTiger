@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     [Header("Boss Fight Settings")]
     public bool isBossFightActive;
+
+
     public Transform currentBossSectionTransform;
 
     private void Start()
