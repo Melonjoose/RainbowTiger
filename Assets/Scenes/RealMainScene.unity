@@ -362,6 +362,8 @@ MonoBehaviour:
   wallSection_start: {fileID: 1583462633}
   wallSections:
   - {fileID: 2628899921580294190, guid: a3d08af29bcc24f46a79043c6fd7cdd7, type: 3}
+  - {fileID: 7069284984255734609, guid: f6fe8110f9524495d8db000259877263, type: 3}
+  - {fileID: 6538005424674635364, guid: 0c6e17f398140488b8a1736e237bac26, type: 3}
   playerDistSpawnWallPart: 10
   bossSection: {fileID: 2628899921580294190, guid: f86ae0940e82043c1bbe9b96c3374735, type: 3}
   bossSectionHeightInterval: 30
@@ -380,7 +382,7 @@ MonoBehaviour:
   lastPlatformTransform: {fileID: 0}
   enemy_start: {fileID: 1838710887}
   enemies:
-  - {fileID: 2190703499727997027, guid: 33e169b3e0e8143f69bdee3ed9d61fb5, type: 3}
+  - {fileID: 584882837838099327, guid: 5b56e2ab836a880498ea8b6fd1197feb, type: 3}
   enemiesPerSection: 1
   enemyYSpacing: 3
   enemyYRandomOffset: 7
