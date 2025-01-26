@@ -27,9 +27,12 @@ public class weien_SpiderBossMain : MonoBehaviour
     public float attackCooldown;
     private bool isAttacking = false;
 
+    private GameManager gameManager;
 
     void Start()
     {
+        gameManager = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
         randomSpot = Random.Range(0,moveSpots.Length);
         waitTime = startWaitTime;
         currentLegs = totalLegs;
@@ -93,5 +96,6 @@ public class weien_SpiderBossMain : MonoBehaviour
     {
         deathCalled = true;
         Destroy(gameObject);
+        gameManager.WinBossFight();
     }
 }
