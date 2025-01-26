@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class weien_PlayerController : MonoBehaviour
 {
-
+    public GameManager gameManager;
 
     [Header("Animator")]
     public Animator animator;
@@ -230,18 +230,22 @@ public class weien_PlayerController : MonoBehaviour
 
     private void Death()
     {
-        deathCalled = true;
-
-
-        GameManager GameManager = FindObjectOfType<GameManager>();
-
-        if (GameManager != null)
+        if (!deathCalled)
         {
-            GameManager.TriggerPlayerDeath();
-            Debug.Log("TriggerPlayerDeath method triggered!");
-        }
+            deathCalled = true;
 
-        Debug.Log("Player has died.");
+            if (gameManager != null)
+            {
+                gameManager.TriggerPlayerDeath();
+                Debug.Log("TriggerPlayerDeath method triggered!");
+            }
+            else
+            {
+                Debug.LogError("GameManager reference is null. Ensure it's assigned in the Inspector.");
+            }
+
+            Debug.Log("Player has died.");
+        }
     }
 
     private void OnDrawGizmos()

@@ -6410,6 +6410,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4507344349573122576, guid: 0b689f866df0fe643bc4d5b52a3a0cd0, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 526260285}
+    - target: {fileID: 4507344349573122576, guid: 0b689f866df0fe643bc4d5b52a3a0cd0, type: 3}
       propertyPath: mainCamHolder
       value: 
       objectReference: {fileID: 1444456925}

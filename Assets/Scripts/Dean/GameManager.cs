@@ -60,7 +60,14 @@ public class GameManager : MonoBehaviour
 
         //Reset game or show game over screen
         finalHeightText.text = Mathf.Round(playerScore).ToString();
-        UI_Manager.isOver = true;
+
+        UI_Manager uiManager = FindObjectOfType<UI_Manager>();
+
+        if (uiManager != null)
+        {
+            uiManager.GameOver();
+            Debug.Log("GameOver method triggered!");
+        }
     }
 
 }
