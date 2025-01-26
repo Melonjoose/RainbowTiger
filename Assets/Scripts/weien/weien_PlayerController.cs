@@ -43,6 +43,7 @@ public class weien_PlayerController : MonoBehaviour
     private Vector2 floatDirection;
     private bool isFloating = false;
     [SerializeField] private bool floatActivated = false;
+    private bool floating = false;
 
     [Header("Grounded Check")]
     public Transform groundCheckTransform;
@@ -106,7 +107,6 @@ public class weien_PlayerController : MonoBehaviour
 
             if (grappleHit.collider != null)
             {
-                animator.SetTrigger("Shoot");
                 grapplePoint = grappleHit.point;
                 grapplePoint.z = 0;
                 ropeObject.line.enabled = true;
@@ -120,10 +120,13 @@ public class weien_PlayerController : MonoBehaviour
             {
                 isFloating = false;
                 holdTimer = 0;
-                animator.SetTrigger("IdleGround");
+                
             }
+            
             floatActivated = false;
+            floating = false;
             grappleCooldownTimer = grappleCooldown;
+            animator.SetTrigger("FloatActivated");
         }
 
         //BubbleFloat when right-click is held for an amount of time
@@ -131,6 +134,7 @@ public class weien_PlayerController : MonoBehaviour
         {
             if (!floatActivated) 
             {
+                Debug.Log("test");
                 animator.SetTrigger("FloatActivated");
                 floatActivated = true;
             }
@@ -142,6 +146,11 @@ public class weien_PlayerController : MonoBehaviour
         }
         if (isFloating)
         {
+            if (!floating)
+            {
+                animator.SetTrigger("Floating");
+                floating = true;
+            }
             BubbleFloat();
         }
 
@@ -177,6 +186,7 @@ public class weien_PlayerController : MonoBehaviour
     }
     void BubbleBullet()
     {
+        animator.SetTrigger("Shoot");
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().AddForce(pivotTransform.up * bulletSpeed, ForceMode2D.Impulse);
     }
