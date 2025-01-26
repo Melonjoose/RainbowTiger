@@ -9,6 +9,7 @@ public class weien_PlayerController : MonoBehaviour
     [Header("Health Settings")]
     public float maxHealth;
     public float currentHealth;
+    public GameObject mainCamHolder;
     private bool deathCalled = false;
 
     [Header("Grapple Settings")]
@@ -30,6 +31,7 @@ public class weien_PlayerController : MonoBehaviour
     [Header("BubbleFloat Settings")]
     public float bfAcceleration = 2f;
     public float bfMaxSpeed = 10f;
+    public float bfSpeed = 2f;
     public float leftRightStrength = 0.4f;
     public float timeBeforeStart = 1f;
     private float holdTimer;
@@ -40,6 +42,9 @@ public class weien_PlayerController : MonoBehaviour
     public Transform groundCheckTransform;
     public float groundCheckRadius = 0.8f;
     private bool isGrounded;
+
+    [Header("GetRandomPositionNearPlayer Settings")]
+    public float randomPosRadius;
 
     Vector2 mousePosition;
 
@@ -165,19 +170,17 @@ public class weien_PlayerController : MonoBehaviour
         {
             floatDirection.x = leftRightStrength;
         }
-        if (rb.velocity.y < bfMaxSpeed)
-        {
-            rb.AddForce(floatDirection * bfAcceleration);
-        }
+        rb.velocity = new Vector2(floatDirection.x, floatDirection.y) * bfSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            mainCamHolder.GetComponent<Animator>().SetTrigger("PlayerHit");
             joint.enabled = false;
             rb.velocity = Vector3.zero;
-            rb.AddForce(pivotTransform.up * -12, ForceMode2D.Impulse);
+            rb.AddForce(pivotTransform.up * -6, ForceMode2D.Impulse);
             currentHealth--;
         }
     }
@@ -192,6 +195,16 @@ public class weien_PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(groundCheckTransform.position, groundCheckRadius);
+    }
+
+    public Vector2 GetRandomPositionNearPlayer()
+    {
+        float randomAngle = Random.Range(0f, 2f * Mathf.PI);
+        float xOffset = Mathf.Cos(randomAngle) * randomPosRadius;
+        float yOffset = Mathf.Sin(randomAngle) * randomPosRadius;
+        Vector2 offsetPosition = new Vector2(transform.position.x + xOffset, transform.position.y + yOffset);
+
+        return offsetPosition;
     }
 }
 

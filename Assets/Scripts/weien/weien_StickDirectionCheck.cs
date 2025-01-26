@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class weien_StickDirectionCheck : MonoBehaviour
 {
     public float rayDistance = 2f;
-    public Transform pivotTransform;
+    public Transform playerTransform;
     public LayerMask wallLayer;
 
-    //1=StickDown, 2=StickUp, 3=StickLeft, 4=StickRight
+    //1=StickDown, 2=StickUp, 3=StickLeft, 4=StickRight, 5=MidAir
     private int stickDirection = 1;
+
+    private bool stickingDown = false;
+    private bool stickingUp = false;
+    private bool stickingLeft = false;
+    private bool stickingRight = false;
+    private bool stickingMidAir = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -22,27 +29,149 @@ public class weien_StickDirectionCheck : MonoBehaviour
     {
         RaycastHit2D upHit = Physics2D.Raycast(
             origin: transform.position,
-            direction: pivotTransform.up,
+            direction: playerTransform.up,
             distance: rayDistance,
             layerMask: wallLayer
             );
 
+        RaycastHit2D downHit = Physics2D.Raycast(
+            origin: transform.position,
+            direction: playerTransform.up * -1,
+            distance: rayDistance,
+            layerMask: wallLayer
+            );
+
+        RaycastHit2D leftHit = Physics2D.Raycast(
+            origin: transform.position,
+            direction: playerTransform.right * -1,
+            distance: rayDistance,
+            layerMask: wallLayer
+            );
+
+        RaycastHit2D rightHit = Physics2D.Raycast(
+            origin: transform.position,
+            direction: playerTransform.right,
+            distance: rayDistance,
+            layerMask: wallLayer
+            );
+
+        if (upHit.collider != null)
+        {
+            stickDirection = 2;
+        }
+        else if (downHit.collider != null)
+        {
+            stickDirection = 1;
+        }
+        else if (leftHit.collider != null)
+        {
+            stickDirection = 3;
+        }
+        else if (rightHit.collider != null)
+        {
+            stickDirection = 4;
+        }
+        else if (upHit.collider == null && downHit.collider == null && leftHit.collider == null && rightHit.collider == null)
+        {
+            stickDirection = 5;
+        }
+
+
         switch (stickDirection)
         {
             case 1:
-                Debug.Log("Stick Down");
+                if (stickingDown) { break; }
+                //Debug.Log("Stick Down");
+                ResetBooleans(1);
+                SetAnimState(1);
+                stickingDown = true;
                 break;
             case 2:
-                Debug.Log("Stick Up");
+                if (stickingUp) { break; }
+                //Debug.Log("Stick Up");
+                ResetBooleans(2);
+                SetAnimState(2);
+                stickingUp = true;
                 break;
             case 3:
-                Debug.Log("Stick Left");
+                if (stickingLeft) { break; }
+                //Debug.Log("Stick Left");
+                ResetBooleans(3);
+                SetAnimState(3);
+                stickingLeft = true;
                 break;
             case 4:
-                Debug.Log("Stick Right");
+                if (stickingRight) { break; }
+                //Debug.Log("Stick Right");
+                ResetBooleans(4);
+                SetAnimState(4);
+                stickingRight = true;
                 break;
-            default:
-                Debug.Log("Stick Down");
+            case 5:
+                if (stickingMidAir) { break; }
+                //Debug.Log("Mid air");
+                ResetBooleans(5);
+                SetAnimState(5);
+                stickingMidAir = true;
+                break;
+        }
+    }
+
+    void ResetBooleans(int excludeDirection)
+    {
+        switch (excludeDirection)
+        {
+            case 1:
+                stickingUp = false;
+                stickingLeft = false;
+                stickingRight = false;
+                stickingMidAir = false;
+                break;
+            case 2:
+                stickingDown = false;
+                stickingLeft = false;
+                stickingRight = false;
+                stickingMidAir = false;
+                break;
+            case 3:
+                stickingUp = false;
+                stickingDown = false;
+                stickingRight = false;
+                stickingMidAir = false;
+                break;
+            case 4:
+                stickingUp = false;
+                stickingLeft = false;
+                stickingDown = false;
+                stickingMidAir = false;
+                break;
+            case 5:
+                stickingDown = false;
+                stickingUp = false;
+                stickingLeft = false;
+                stickingRight = false;
+                break;
+        }
+    }
+
+    void SetAnimState(int direction)
+    {
+        switch (direction)
+        {
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
                 break;
         }
     }

@@ -19,6 +19,14 @@ public class weien_SpiderBossMain : MonoBehaviour
     public float startWaitTime;
     public Transform[] moveSpots;
 
+    [Header("Attack Settings")]
+    public GameObject spiderBullet;
+    public Transform shootPoint;
+    public int numOfBullets;
+    public float attackCooldown;
+    private bool isAttacking = false;
+
+
     void Start()
     {
         randomSpot = Random.Range(0,moveSpots.Length);
@@ -53,6 +61,12 @@ public class weien_SpiderBossMain : MonoBehaviour
             }
 
         }
+
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            StartCoroutine(ShootAtPlayer(attackCooldown));
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -61,6 +75,16 @@ public class weien_SpiderBossMain : MonoBehaviour
         {
             currentHealth--;
         }
+    }
+    IEnumerator ShootAtPlayer(float seconds)
+    {
+        //Play Animation
+        yield return new WaitForSeconds(seconds);
+        for(int i = 0; i<numOfBullets; i++)
+        {
+            Instantiate(spiderBullet, shootPoint.position, Quaternion.identity);
+        }
+        isAttacking = false;
     }
 
     void Death()
