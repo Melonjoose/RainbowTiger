@@ -63,6 +63,7 @@ public class UI_Manager : MonoBehaviour
     {
         //AudioManager.Instance.PlaySFX("SFX_UIClick");
         menuGameOver.SetActive(true);
+        gameUI.SetActive(false);
         isOver = true;
     }
 
