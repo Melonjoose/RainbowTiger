@@ -82,6 +82,7 @@ public class UI_Manager : MonoBehaviour
         Time.timeScale = 1;
         menuInstructions.SetActive(false);
         menuCredits.SetActive(false);
+        menuGameOver.SetActive(false);
     }
 
     public void ShowCredits()
