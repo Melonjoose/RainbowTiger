@@ -17,7 +17,7 @@ public class weien_PlayerController : MonoBehaviour
     public float currentHealth;
     public GameObject mainCamHolder;
     public weien_DamagedColor damagedColorScript;
-    private bool deathCalled = false;
+    public bool deathCalled = false;
 
     [Header("Grapple Settings")]
     [SerializeField] private float grappleLength;
@@ -74,13 +74,13 @@ public class weien_PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheckTransform.position, groundCheckRadius, grappleLayer);
 
         //Shoot BubbleBullet
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !deathCalled)
         {
             BubbleBullet();
         }
 
         //Mini-Jump when right-click
-        if (Input.GetMouseButtonDown(1) && isGrounded && grappleCooldownTimer <= 0)
+        if (Input.GetMouseButtonDown(1) && isGrounded && grappleCooldownTimer <= 0 && !deathCalled)
         {
             if (!onWall)
             {
@@ -97,7 +97,7 @@ public class weien_PlayerController : MonoBehaviour
         }
 
         //Grapple and/or stop BubbleFloat when right-click is released
-        if (Input.GetMouseButtonUp(1) && grappleCooldownTimer <= 0)
+        if (Input.GetMouseButtonUp(1) && grappleCooldownTimer <= 0 && !deathCalled)
         {
             Vector2 playerPosition = new Vector2(transform.position.x, transform.position.y);
             RaycastHit2D grappleHit = Physics2D.Raycast(
@@ -142,7 +142,7 @@ public class weien_PlayerController : MonoBehaviour
         }
 
         //BubbleFloat when right-click is held for an amount of time
-        if (Input.GetMouseButton(1) && grappleCooldownTimer <= 0)
+        if (Input.GetMouseButton(1) && grappleCooldownTimer <= 0 && !deathCalled)
         {
             if (!floatActivated) 
             {
@@ -247,7 +247,7 @@ public class weien_PlayerController : MonoBehaviour
             {
                 Debug.LogError("GameManager reference is null. Ensure it's assigned in the Inspector.");
             }
-
+            animator.SetTrigger("Death");
             Debug.Log("Player has died.");
         }
     }

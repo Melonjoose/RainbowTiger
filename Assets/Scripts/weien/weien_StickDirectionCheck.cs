@@ -9,7 +9,7 @@ public class weien_StickDirectionCheck : MonoBehaviour
     public float rayDistance = 2f;
     public Transform playerTransform;
     public LayerMask wallLayer;
-
+    public weien_PlayerController playerController;
     //1=StickDown, 2=StickUp, 3=StickLeft, 4=StickRight, 5=MidAir
     private int stickDirection = 1;
 
@@ -24,118 +24,123 @@ public class weien_StickDirectionCheck : MonoBehaviour
     void Start()
     {
         scale = transform.localScale.x;
+        playerController = GetComponent<weien_PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
-
-        RaycastHit2D upHit = Physics2D.Raycast(
-            origin: transform.position,
-            direction: playerTransform.up,
-            distance: rayDistance,
-            layerMask: wallLayer
-            );
-
-        RaycastHit2D downHit = Physics2D.Raycast(
-            origin: transform.position,
-            direction: playerTransform.up * -1,
-            distance: rayDistance,
-            layerMask: wallLayer
-            );
-
-        RaycastHit2D leftHit = Physics2D.Raycast(
-            origin: transform.position,
-            direction: playerTransform.right * -1,
-            distance: rayDistance,
-            layerMask: wallLayer
-            );
-
-        RaycastHit2D rightHit = Physics2D.Raycast(
-            origin: transform.position,
-            direction: playerTransform.right,
-            distance: rayDistance,
-            layerMask: wallLayer
-            );
-
-        if (upHit.collider != null)
+        if(playerController.deathCalled == false)
         {
-            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+
+            RaycastHit2D upHit = Physics2D.Raycast(
+                origin: transform.position,
+                direction: playerTransform.up,
+                distance: rayDistance,
+                layerMask: wallLayer
+                );
+
+            RaycastHit2D downHit = Physics2D.Raycast(
+                origin: transform.position,
+                direction: playerTransform.up * -1,
+                distance: rayDistance,
+                layerMask: wallLayer
+                );
+
+            RaycastHit2D leftHit = Physics2D.Raycast(
+                origin: transform.position,
+                direction: playerTransform.right * -1,
+                distance: rayDistance,
+                layerMask: wallLayer
+                );
+
+            RaycastHit2D rightHit = Physics2D.Raycast(
+                origin: transform.position,
+                direction: playerTransform.right,
+                distance: rayDistance,
+                layerMask: wallLayer
+                );
+
+            if (upHit.collider != null)
             {
-                animator.SetTrigger("IdleGround");
+                if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+                {
+                    animator.SetTrigger("IdleGround");
+                }
+                stickDirection = 2;
             }
-            stickDirection = 2;
-        }
-        else if (downHit.collider != null)
-        {
-            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+            else if (downHit.collider != null)
             {
-                animator.SetTrigger("IdleGround");
+                if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+                {
+                    animator.SetTrigger("IdleGround");
+                }
+                stickDirection = 1;
             }
-            stickDirection = 1;
-        }
-        else if (leftHit.collider != null)
-        {
-            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+            else if (leftHit.collider != null)
             {
-                animator.SetTrigger("IdleWall");
+                if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+                {
+                    animator.SetTrigger("IdleWall");
+                }
+                stickDirection = 3;
             }
-            stickDirection = 3;
-        }
-        else if (rightHit.collider != null)
-        {
-            if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+            else if (rightHit.collider != null)
             {
-                animator.SetTrigger("IdleWall");
+                if (stateInfo.IsName("AM_Gum_FloatTransition") || stateInfo.IsName("AM_Gum_Shoot"))
+                {
+                    animator.SetTrigger("IdleWall");
+                }
+                stickDirection = 4;
             }
-            stickDirection = 4;
-        }
-        else if (upHit.collider == null && downHit.collider == null && leftHit.collider == null && rightHit.collider == null)
-        {
-            stickDirection = 5;
-        }
+            else if (upHit.collider == null && downHit.collider == null && leftHit.collider == null && rightHit.collider == null)
+            {
+                stickDirection = 5;
+            }
 
-        switch (stickDirection)
-        {
-            case 1:
-                if (stickingDown) { break; }
-                //Debug.Log("Stick Down");
-                
-                ResetBooleans(1);
-                SetAnimState(1);
-                stickingDown = true;
-                break;
-            case 2:
-                if (stickingUp) { break; }
-                //Debug.Log("Stick Up");
-                ResetBooleans(2);
-                SetAnimState(2);
-                stickingUp = true;
-                break;
-            case 3:
-                if (stickingLeft) { break; }
-                //Debug.Log("Stick Left");
-                ResetBooleans(3);
-                SetAnimState(3);
-                stickingLeft = true;
-                break;
-            case 4:
-                if (stickingRight) { break; }
-                //Debug.Log("Stick Right");
-                ResetBooleans(4);
-                SetAnimState(4);
-                stickingRight = true;
-                break;
-            case 5:
-                if (stickingMidAir) { break; }
-                //Debug.Log("Mid air");
-                ResetBooleans(5);
-                SetAnimState(5);
-                stickingMidAir = true;
-                break;
+            switch (stickDirection)
+            {
+                case 1:
+                    if (stickingDown) { break; }
+                    //Debug.Log("Stick Down");
+
+                    ResetBooleans(1);
+                    SetAnimState(1);
+                    stickingDown = true;
+                    break;
+                case 2:
+                    if (stickingUp) { break; }
+                    //Debug.Log("Stick Up");
+                    ResetBooleans(2);
+                    SetAnimState(2);
+                    stickingUp = true;
+                    break;
+                case 3:
+                    if (stickingLeft) { break; }
+                    //Debug.Log("Stick Left");
+                    ResetBooleans(3);
+                    SetAnimState(3);
+                    stickingLeft = true;
+                    break;
+                case 4:
+                    if (stickingRight) { break; }
+                    //Debug.Log("Stick Right");
+                    ResetBooleans(4);
+                    SetAnimState(4);
+                    stickingRight = true;
+                    break;
+                case 5:
+                    if (stickingMidAir) { break; }
+                    //Debug.Log("Mid air");
+                    ResetBooleans(5);
+                    SetAnimState(5);
+                    stickingMidAir = true;
+                    break;
+            }
         }
     }
+        
 
     void ResetBooleans(int excludeDirection)
     {
