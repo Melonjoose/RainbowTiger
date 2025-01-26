@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySlug
       objectReference: {fileID: 0}
+    - target: {fileID: 5480444219188730283, guid: 2ced62a360c3b384aa56e1e592c724df, type: 3}
+      propertyPath: m_Size.x
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5480444219188730283, guid: 2ced62a360c3b384aa56e1e592c724df, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.43
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

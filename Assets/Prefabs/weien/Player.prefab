@@ -188,9 +188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e327f819f24ee4992d1c9b59fdfb26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   animator: {fileID: 8238383284119014623}
   onWall: 0
-  maxHealth: 10
+  maxHealth: 1
   currentHealth: 0
   mainCamHolder: {fileID: 0}
   damagedColorScript: {fileID: 9189465787881646505}

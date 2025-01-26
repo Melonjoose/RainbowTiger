@@ -275,6 +275,6 @@ MonoBehaviour:
   raycastDistance: 4
   shootPoint: {fileID: 1412176893026508863}
   projectile: {fileID: 1176819681988501673, guid: 72f65cb82580ae84a8179c29ae7ac628, type: 3}
-  projectileSpeed: 10
+  projectileSpeed: 4
   shootDelay: 4
   animator: {fileID: 1072033673887664730}

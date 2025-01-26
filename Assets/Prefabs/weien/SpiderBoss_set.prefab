@@ -1201,7 +1201,7 @@ MonoBehaviour:
   currentLegs: 0
   damagedColorScript: {fileID: 726871162812441891}
   allLegsDestroyed: 0
-  moveSpeed: 10
+  moveSpeed: 5
   startWaitTime: 1.2
   moveSpots:
   - {fileID: 4787718811701013051}
