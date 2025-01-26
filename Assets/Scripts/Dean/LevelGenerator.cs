@@ -94,7 +94,9 @@ public class LevelGenerator : MonoBehaviour
                     // Spawn a normal wall section, must spawn platforms before walls so that I can constrain the platforms
                     SpawnWallPart(); 
                     print("Normal wall section spawned.");
+                   
                     SpawnModules();
+                    
                     //lastPlatformTransform = SpawnModules(lastEndPosition, platformsPerSection, platforms, lastPlatformTransform, platformYSpacing, platformXMin, platformXMax, platformYRandomOffset);
                     //lastEnemyTransform = SpawnModules(lastEndPosition, enemiesPerSection, enemies, lastEnemyTransform, enemyYSpacing, enemyXMin, enemyXMax, enemyYRandomOffset);
 
@@ -107,7 +109,10 @@ public class LevelGenerator : MonoBehaviour
     void SpawnModules()
     {
         SpawnPlatforms();
-        SpawnEnemies();
+        if (gameManager.isGameStarted)
+        {
+            SpawnEnemies();
+        }
     }
 
     // <------------------------------ WALLS ------------------------------> //

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public float playerScore; //displayed score or highest height of player
     public TextMeshProUGUI heightText;
     public TextMeshProUGUI finalHeightText;
+    public bool isGameStarted = false; 
 
     [Header("Boss Fight Settings")]
     public bool isBossFightActive;
@@ -27,10 +28,14 @@ public class GameManager : MonoBehaviour
         uiManager = FindObjectOfType<UI_Manager>();
         playerScore = 0;
         isBossFightActive = false;
+        isGameStarted = UI_Manager.isPlaying;
     }
 
     private void Update()
     {
+        print("isGameStarted" + isGameStarted);
+        isGameStarted = UI_Manager.isPlaying;
+
         if (player != null)
         {
             playerHeight = player.position.y;
