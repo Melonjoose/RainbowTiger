@@ -105,12 +105,12 @@ public class weien_EnemySlug : MonoBehaviour
 
     IEnumerator ShootAtPlayer(float seconds)
     {
+        yield return new WaitForSeconds(seconds);
         //Play Animation
         animator.SetTrigger("Shoot");
-
-        yield return new WaitForSeconds(seconds);
-        GameObject slugBullet = Instantiate(projectile, shootPoint.position, Quaternion.identity);
-        Vector2 direction = player.transform.position - shootPoint.position;
+        yield return new WaitForSeconds(.5f);
+        GameObject slugBullet = Instantiate(projectile, shootPoint.transform.position, Quaternion.identity);
+        Vector2 direction = player.transform.position - shootPoint.transform.position;
         slugBullet.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
         isAttacking = false;
         if (moveUp) { moveUp = false; } else { moveUp = true; }
