@@ -126,6 +126,11 @@ public class LevelGenerator : MonoBehaviour
     Transform SpawnWallPart(Vector3 spawnPosition)
     {
         Transform randomWallSection = wallSections[Random.Range(0, wallSections.Length)];
+        if (!gameManager.isGameStarted)
+        {
+            //Hard code the random wall 
+            randomWallSection = wallSections[0];
+        }
         Transform wallSectionTransform = Instantiate(randomWallSection, spawnPosition, Quaternion.identity);
         return wallSectionTransform;
     }
@@ -152,7 +157,6 @@ public class LevelGenerator : MonoBehaviour
 
             //Chooses a random module from the desired module array to spawn
             Transform randomModule = platforms[Random.Range(0, platforms.Length)];
-
             
             Transform newModuleTransform = Instantiate(randomModule, newSpawnPosition, Quaternion.identity);
             lastPlatformTransform = newModuleTransform;
